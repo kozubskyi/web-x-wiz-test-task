@@ -1,6 +1,6 @@
 import { yupResolver } from '@hookform/resolvers/yup';
 import { DropdownField } from 'components/common/DropdownField';
-import { FieldBox } from 'components/common/fieldBox';
+import { FieldBox } from 'components/common/FieldBox';
 import { useTranslations } from 'next-intl';
 import { FC, ReactNode } from 'react';
 import { useForm } from 'react-hook-form';
