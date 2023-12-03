@@ -291,19 +291,19 @@
     }
   }
 
-  .pages {
+  .pagination {
     padding: toRem(24);
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    ul {
+    & > ul {
       display: flex;
 
-      li {
+      & > li {
         margin-left: $fontSize;
 
-        a {
+        & > a {
           display: flex;
           justify-content: center;
           align-items: center;
