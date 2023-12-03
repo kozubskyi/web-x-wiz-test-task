@@ -539,7 +539,7 @@ export const SellersStats: FC = () => {
 
     const params = new URLSearchParams();
 
-    params.set('page', `${page}`);
+    params.set('page', '1');
     if (search) params.set('search', search);
     if (from) params.set('from', from.split('-').reverse().join('-'));
     if (to) params.set('to', to.split('-').reverse().join('-'));
