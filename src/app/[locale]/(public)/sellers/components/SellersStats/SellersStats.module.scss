@@ -297,17 +297,77 @@
     justify-content: space-between;
     align-items: center;
 
-    & > ul {
+    // & > ul {
+    //   display: flex;
+
+    //   & > li {
+    //     margin-left: $fontSize;
+
+    //     & > a {
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       width: toRem(48);
+    //       height: toRem(48);
+    //       border-radius: $radius;
+    //       font-size: toRem(14);
+    //       font-weight: 600;
+    //       color: $accent;
+    //       cursor: pointer;
+
+    //       [data-theme='dark'] & {
+    //         color: $dark;
+    //       }
+
+    //       &:hover {
+    //         background-color: $blue_pale;
+    //       }
+
+    //       &[aria-current='page'] {
+    //         background-color: $blue_pale;
+    //         cursor: auto;
+    //       }
+
+    //       &[aria-disabled='true'] {
+    //         cursor: auto;
+
+    //         &:hover {
+    //           background-color: transparent;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+
+    .pages {
       display: flex;
 
-      & ul {
-        display: none;
-      }
-
-      & > li {
+      li {
         margin-left: $fontSize;
 
-        & > a {
+        // a {
+        //   display: flex;
+        //   justify-content: center;
+        //   align-items: center;
+        //   width: toRem(48);
+        //   height: toRem(48);
+        //   border-radius: $radius;
+        //   font-size: toRem(14);
+        //   font-weight: 600;
+        //   color: $accent;
+        //   cursor: pointer;
+
+        //   [data-theme='dark'] & {
+        //     color: $dark;
+        //   }
+
+        //   &:hover,
+        //   &.selected {
+        //     background-color: $blue_pale;
+        //   }
+        // }
+
+        button {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -317,27 +377,14 @@
           font-size: toRem(14);
           font-weight: 600;
           color: $accent;
-          cursor: pointer;
 
           [data-theme='dark'] & {
             color: $dark;
           }
 
-          &:hover {
+          &:hover,
+          &.selected {
             background-color: $blue_pale;
-          }
-
-          &[aria-current='page'] {
-            background-color: $blue_pale;
-            cursor: auto;
-          }
-
-          &[aria-disabled='true'] {
-            cursor: auto;
-
-            &:hover {
-              background-color: transparent;
-            }
           }
         }
       }

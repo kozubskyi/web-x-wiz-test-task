@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
-import ReactPaginate from 'react-paginate';
+// import ReactPaginate from 'react-paginate';
+// import Pagination from 'react-js-pagination';
 
 import { TopSellers } from './TopSellers';
 import { BanSellerModal } from 'components/modals/BanSellerModal';
@@ -562,12 +563,12 @@ export const SellersStats: FC = () => {
     setIsModalOpened(true);
   };
 
-  const onPageChange = (evt: { selected: number }) => {
+  const onPageChange = (newPage: number) => {
     const { search, from, to } = getValues();
 
     const params = new URLSearchParams();
 
-    params.set('page', `${evt.selected + 1}`);
+    params.set('page', `${newPage}`);
     if (search) params.set('search', search);
     if (from) params.set('from', from.split('-').reverse().join('-'));
     if (to) params.set('to', to.split('-').reverse().join('-'));
@@ -708,7 +709,7 @@ export const SellersStats: FC = () => {
           {filteredUsers.length ? startIdx + 1 : 0}-{endIdx} {t('Table.of')}{' '}
           {filteredUsers.length}
         </span>
-        <ReactPaginate
+        {/* <ReactPaginate
           pageCount={pageCount}
           pageRangeDisplayed={3}
           marginPagesDisplayed={1}
@@ -718,7 +719,164 @@ export const SellersStats: FC = () => {
           initialPage={page - 1}
           onPageChange={onPageChange}
           renderOnZeroPageCount={null}
-        />
+        /> */}
+        {/* <Pagination
+          activePage={page}
+          itemsCountPerPage={perPage}
+          totalItemsCount={filteredUsers.length}
+          pageRangeDisplayed={3}
+          activeLinkClass="selected"
+          prevPageText={<ArrowLeft />}
+          nextPageText={<ArrowRight />}
+          firstPageText={1}
+          lastPageText={pageCount}
+          onChange={onPageChange.bind(this)}
+        /> */}
+        <ul className={s.pages}>
+          <li>
+            <button
+              type="button"
+              onClick={() => page > 1 && onPageChange(page - 1)}
+              disabled={page === 1}
+            >
+              <ArrowLeft />
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={() => onPageChange(1)}
+              style={{
+                backgroundColor:
+                  page === 1 ? 'var(--blue-pale)' : 'transparent',
+              }}
+            >
+              1
+            </button>
+          </li>
+          {pageCount >= 3 && page <= 4 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(2)}
+                style={{
+                  backgroundColor:
+                    page === 2 ? 'var(--blue-pale)' : 'transparent',
+                }}
+              >
+                2
+              </button>
+            </li>
+          )}
+          {pageCount >= 5 && page <= 4 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(3)}
+                style={{
+                  backgroundColor:
+                    page === 3 ? 'var(--blue-pale)' : 'transparent',
+                }}
+              >
+                3
+              </button>
+            </li>
+          )}
+
+          {page >= 5 && (
+            <li className="break-left">
+              <button type="button" onClick={() => onPageChange(page - 2)}>
+                ...
+              </button>
+            </li>
+          )}
+
+          {page >= 5 && page <= pageCount - 2 && (
+            <li>
+              <button type="button" onClick={() => onPageChange(page - 1)}>
+                {page - 1}
+              </button>
+            </li>
+          )}
+          {page >= 4 && page <= pageCount - 3 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(page)}
+                style={{ backgroundColor: 'var(--blue-pale)' }}
+              >
+                {page}
+              </button>
+            </li>
+          )}
+          {page >= 3 && page <= pageCount - 4 && (
+            <li>
+              <button type="button" onClick={() => onPageChange(page + 1)}>
+                {page + 1}
+              </button>
+            </li>
+          )}
+
+          {page <= pageCount - 4 && (
+            <li className="break-right">
+              <button type="button" onClick={() => onPageChange(page + 2)}>
+                ...
+              </button>
+            </li>
+          )}
+
+          {pageCount >= 6 && page >= pageCount - 3 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(pageCount - 2)}
+                style={{
+                  backgroundColor:
+                    page === pageCount - 2 ? 'var(--blue-pale)' : 'transparent',
+                }}
+              >
+                {pageCount - 2}
+              </button>
+            </li>
+          )}
+          {pageCount >= 4 && page >= pageCount - 3 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(pageCount - 1)}
+                style={{
+                  backgroundColor:
+                    page === pageCount - 1 ? 'var(--blue-pale)' : 'transparent',
+                }}
+              >
+                {pageCount - 1}
+              </button>
+            </li>
+          )}
+          {pageCount >= 2 && (
+            <li>
+              <button
+                type="button"
+                onClick={() => onPageChange(pageCount)}
+                style={{
+                  backgroundColor:
+                    page === pageCount ? 'var(--blue-pale)' : 'transparent',
+                }}
+              >
+                {pageCount}
+              </button>
+            </li>
+          )}
+          <li>
+            <button
+              type="button"
+              onClick={() => page < pageCount && onPageChange(page + 1)}
+              disabled={page === pageCount}
+            >
+              <ArrowRight />
+            </button>
+          </li>
+        </ul>
       </div>
       <BanSellerModal
         isOpen={isModalOpened}
