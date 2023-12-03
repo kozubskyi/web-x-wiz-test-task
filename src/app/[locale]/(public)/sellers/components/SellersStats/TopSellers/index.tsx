@@ -62,12 +62,22 @@ export const TopSellers = ({ allSellers }: TopSellersProps) => {
           {topSellers.map((user, i) => (
             <li key={user.email}>
               <div className={s.card_image}>
-                <Image
+                {/* <Image
                   src={user.avatarURL}
                   width={80}
                   height={80}
                   alt={user.userName}
-                />
+                /> */}
+                {user.avatarURL ? (
+                  <Image
+                    src={user.avatarURL}
+                    width={80}
+                    height={80}
+                    alt={user.userName}
+                  />
+                ) : (
+                  user.userName[0].toUpperCase()
+                )}
                 <span className={i === 0 ? s.primary : s.secondary}>
                   #{i + 1}
                 </span>

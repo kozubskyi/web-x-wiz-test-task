@@ -59,19 +59,28 @@
         position: relative;
         display: flex;
         justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: toRem(80);
+        max-height: toRem(80);
+        margin: 0 auto;
+        background-color: $grey_pale;
+        color: $dark;
         height: calc(toRem(80) + toRem(18));
+        font-size: toRem(40);
 
-        img {
-          border-radius: 50%;
-        }
+        // img {
+        //   border-radius: 50%;
+        // }
 
         .primary,
         .secondary {
           width: toRem(36);
           height: toRem(36);
+          font-size: $fontSize;
           border-radius: 50%;
           position: absolute;
-          bottom: 0;
+          bottom: toRem(-18);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -104,7 +113,7 @@
         h4 {
           font-size: $fontSize;
           font-weight: bold;
-          padding: $fontSize 0 toRem(12);
+          padding: toRem(30) 0 toRem(12);
           text-align: center;
         }
 
