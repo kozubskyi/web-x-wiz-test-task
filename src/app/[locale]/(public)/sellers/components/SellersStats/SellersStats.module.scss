@@ -300,6 +300,10 @@
     & > ul {
       display: flex;
 
+      & ul {
+        display: none;
+      }
+
       & > li {
         margin-left: $fontSize;
 
