@@ -5,7 +5,7 @@ import { IUser } from 'types/userTypes';
 
 import { Container } from 'ui/components/Container';
 import { Logo } from 'components/common/logo';
-import { Lang } from 'components/lang';
+import { Lang } from 'components/Lang';
 
 import { HeaderNav } from './HeaderNav';
 import { HeaderUnauthorizedAvatar } from './HeaderAuthAvatars/HeaderUnauthorizedAvatar';
