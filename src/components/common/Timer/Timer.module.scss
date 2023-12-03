@@ -1,0 +1,10 @@
+@import "constants/constans.scss";
+
+.timer {
+    @include flexRow(flex-start, center);
+    margin-top: toRem(32);
+    height: toRem(48);
+    & > p > span {
+        margin-right: toRem(5);
+    }
+}

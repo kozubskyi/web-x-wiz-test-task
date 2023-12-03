@@ -1,0 +1,203 @@
+@import "constants/constans.scss";
+
+.table {
+    width: 100%;
+    min-width: toRem(400);
+    border-collapse: collapse;
+    color: $dark;
+
+    [data-theme="dark"] & {
+        color: $mainColor;
+    }
+
+    &_wrapper {
+        overflow-x: auto;
+    }
+
+    &_nopage {
+        @include flexRow(center, center);
+        text-align: center;
+        min-height: toRem(320);
+
+        &_title {
+            font-weight: 600;
+            color: $dark;
+        }
+
+        &_subtitle {
+            margin-top: toRem(4);
+        }
+
+        &_button {
+            margin: toRem(16) auto 0;
+        }
+    }
+
+    & thead {
+        background-color: $grey;
+        border-bottom: toRem(1) solid $grey_pale;
+
+        [data-theme="dark"] & {
+            background-color: rgb($grey_misty, 0.24);
+        }
+
+        & th {
+            white-space: nowrap;
+            user-select: none;
+
+            &:last-child {
+                padding: 0;
+                width: toRem(48);
+            }
+        }
+    }
+
+    & th,
+    & td {
+        padding: toRem(16) toRem(12);
+        font-weight: 400;
+        text-align: left;
+
+        &:first-child {
+            padding-left: toRem(24);
+        }
+
+        &:last-child {
+            padding-right: toRem(24);
+        }
+    }
+
+    &_body {
+        & tr {
+            &:not(:last-child) {
+                border-bottom: toRem(1) solid $grey_pale;
+            }
+
+            [data-theme="dark"] & {
+                color: $dark;
+
+                &:nth-of-type(even) {
+                    background-color: rgb($grey_misty, 0.24);
+                }
+            }
+        }
+    }
+
+    &_filter {
+        @include flexRow(center);
+        column-gap: toRem(8);
+
+        & svg {
+            width: toRem(20);
+            height: toRem(20);
+        }
+    }
+
+    .table_button {
+        min-width: auto;
+        width: toRem(48);
+        padding: 0;
+        border-color: transparent;
+
+        [data-theme="dark"] & {
+            background-color: transparent;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $grey_misty_36;
+                }
+            }
+        }
+    }
+}
+
+.pagination {
+    @include flexRow(center, space-between);
+    column-gap: toRem(24);
+    padding: toRem(24);
+    border-top: toRem(1) solid $grey_pale;
+
+    &_controls {
+        @include flexRow(center);
+        column-gap: toRem(16);
+        user-select: none;
+    }
+
+    .pagination_control {
+        width: toRem(48);
+        border-color: transparent;
+        min-width: auto;
+        padding: 0;
+        transition: none;
+        color: $accent;
+
+        [data-theme="dark"] & {
+            border-color: transparent;
+            background-color: transparent;
+            color: $dark;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $grey;
+            }
+        }
+
+        &.active {
+            pointer-events: none;
+            background-color: $blue_pale;
+
+            [data-theme="dark"] & {
+                background-color: rgb($grey_misty, 0.24);
+            }
+        }
+
+        &.disabled {
+            pointer-events: none;
+            opacity: 0.5;
+            color: $mainColor;
+        }
+    }
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    column-gap: toRem(15);
+    cursor: pointer;
+    font-size: toRem(14);
+    line-height: 142.857143%; /* 20/14 */
+    width: fit-content;
+    user-select: none;
+
+    & > input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+    }
+
+    &_background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 toRem(18);
+        width: toRem(18);
+        height: toRem(18);
+        background-color: transparent;
+        border: toRem(1) solid $mainColor;
+        border-radius: toRem(5);
+        color: $mainColor;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+
+        & svg {
+            width: toRem(12);
+            height: toRem(12);
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "constants/constans.scss";
+
+.header {
+    @include flexRow(center, space-between);
+    padding: toRem(24);
+
+    &_filters {
+        position: relative;
+    }
+
+    .header_filter {
+        justify-content: space-between;
+        transition: none;
+        background-color: transparent;
+        height: toRem(40);
+        padding: toRem(10) toRem(16);
+        min-width: toRem(125);
+
+        [data-theme="dark"] & {
+            background-color: $grey;
+            border-color: $grey_pale;
+        }
+
+        & svg {
+            transition: transform $transition;
+        }
+
+        &.active {
+            border-color: $accent;
+            border-radius: $radius $radius 0 0;
+            border-bottom-color: transparent;
+
+            [data-theme="dark"] & {
+                background: $grey_bg_linear;
+                border-color: transparent;
+            }
+
+            & svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}

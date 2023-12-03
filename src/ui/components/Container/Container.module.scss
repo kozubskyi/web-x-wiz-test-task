@@ -1,0 +1,8 @@
+@import "constants/constans.scss";
+
+.container {
+    max-width: toRem($maxWidthContainer);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 toRem(15);
+}

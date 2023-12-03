@@ -1,0 +1,62 @@
+@import "constants/constans.scss";
+
+.switcher {
+    $width: toRem(64);
+    $padding: toRem(4);
+
+    @include flexRow(center);
+    background-color: #f0eff0;
+    border: toRem(1) solid $grey_pale;
+    width: $width;
+    padding: $padding;
+    height: fit-content;
+    border-radius: toRem(48);
+
+    [data-theme="dark"] & {
+        background-color: $grey_misty_36;
+        border-color: $grey_pale;
+    }
+
+    & span {
+        display: inline-block;
+        width: toRem(28);
+        height: toRem(28);
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0 toRem(2) toRem(16) toRem(-6) #0000000f;
+        transition: transform $transition !important;
+
+        [data-theme="dark"] & {
+            background-color: #d8deeb29;
+        }
+    }
+
+    &.active {
+        @include background-accent();
+        border: none;
+
+        & span {
+            transform: translateX(calc(($width - 2 * $padding) / 2));
+
+            [data-theme="dark"] & {
+                background-color: $dark;
+            }
+        }
+    }
+
+    &.middle {
+        $width: toRem(80);
+        width: $width;
+
+        & span {
+            width: toRem(34);
+            height: toRem(34);
+        }
+
+        &.active {
+            & span {
+                transform: translateX(calc(($width - 2 * $padding) / 2));
+            }
+        }
+    }
+}

@@ -1,0 +1,146 @@
+@import "constants/constans.scss";
+
+.lang {
+    position: relative;
+    width: fit-content;
+
+    .lang_value {
+        @include flexRow(center, space-between);
+        column-gap: toRem(12);
+
+        color: $accent;
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+        font-weight: 600;
+        text-transform: uppercase;
+
+        height: toRem(48);
+        min-width: toRem(103);
+        padding: toRem(12) toRem(24);
+        border: toRem(1) solid $accent;
+        border-radius: toRem(52);
+
+        transition: all $transition;
+
+        html[data-theme="dark"] & {
+            color: $dark;
+            border-color: transparent;
+            background: $grey;
+
+            & span {
+                -webkit-text-fill-color: initial;
+            }
+        }
+
+        & svg {
+            transition: transform $transition;
+            width: toRem(24);
+            height: toRem(24);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+
+    .lang_valueActive {
+        & svg {
+            transform: rotate(180deg);
+        }
+    }
+
+    .lang_wrapper {
+        background-color: $white;
+        border-radius: $radius;
+        padding: toRem(10) toRem(10) toRem(10) 0;
+
+        
+        [data-theme='dark'] & {
+            background-color: $grey;
+            backdrop-filter: $bg_blur;
+        }
+    }
+
+    .lang_list {
+        padding-right: toRem(10);
+        padding-left: toRem(20);
+        max-height: toRem(250);
+        overflow-y: auto;
+    }
+
+    .lang_item {
+        &:not(:last-child) {
+            border-bottom: toRem(1) solid $grey_pale;
+        }
+    }
+
+    .lang_button {
+        position: relative;
+        @include flexRow(center, flex-start);
+        column-gap: toRem(14);
+
+        width: 100%;
+        padding: toRem(17.5);
+
+        font-weight: 600;
+        color: $dark;
+        text-transform: uppercase;
+
+        transition: color $transition;
+
+        & span {
+            position: relative;
+            display: inline-block;
+            width: toRem(20);
+            height: toRem(20);
+
+            border: toRem(1) solid $mainColor;
+            border-radius: 50%;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $accent_light;
+
+                [data-theme="dark"] & {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+    .lang_buttonActive {
+        pointer-events: none;
+        @include color-accent();
+
+        [data-theme="dark"] & {
+            color: $dark;
+            border-color: $dark;
+            -webkit-text-fill-color: initial;
+        }
+
+        & span {
+            border-color: $accent;
+            @include flexRow(center, center);
+
+            [data-theme="dark"] & {
+                border-color: $dark;
+            }
+
+            &::before {
+                content: "";
+
+                width: toRem(13);
+                height: toRem(13);
+
+                background-color: $accent;
+                border-radius: 50%;
+
+                [data-theme="dark"] & {
+                    background-color: $dark;
+                }
+            }
+        }
+    }
+}

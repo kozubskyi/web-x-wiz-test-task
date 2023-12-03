@@ -1,0 +1,40 @@
+@import "constants/constans.scss";
+
+.chat {
+    padding: toRem(16) toRem(24);
+    cursor: pointer;
+    transition: background-color $transition;
+
+    @media (any-hover: hover){
+        &:hover{
+            background-color: $grey_pale;
+        }
+    }
+
+    &_sender {
+        position: relative;
+        @include flexRow(center, flex-start);
+        column-gap: toRem(24);
+
+        &_name {
+            font-weight: 600;
+            font-size: toRem(24);
+            line-height: 133.333333%; /* 32/24 */
+            color: $dark;
+        }
+
+        &_message {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+        }
+    }
+
+    &_date {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+    }
+}

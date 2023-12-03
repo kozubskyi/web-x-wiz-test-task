@@ -1,0 +1,116 @@
+@import "constants/constans.scss";
+
+.autocompleteField {
+    position: relative;
+    .autocompleteField_label {
+        font-weight: 600;
+        color: $dark;
+    }
+
+    .autocompleteField_wrapper {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        border: toRem(1) solid $grey_pale;
+        border-radius: $radius;
+        height: toRem(48);
+        margin-top: toRem(8);
+        overflow: hidden;
+
+        [data-theme="dark"] & {
+            background-color: $grey_misty_36;
+            border-color: transparent;
+        }
+    }
+
+    .autocompleteField_icon {
+        @include flexRow(center, center);
+
+        width: toRem(48);
+        height: 100%;
+        padding-left: toRem(3);
+
+        color: $mainColor;
+        border-right: toRem(1) solid $grey_pale;
+        & svg {
+            width: toRem(20);
+            height: toRem(20);
+        }
+    }
+
+    .autocompleteField_input {
+        border: none;
+        padding: 0 toRem(16) 0 toRem(12);
+        color: $dark;
+        font-weight: 600;
+        outline: none;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .autocompleteField_dropdown {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        & > div {
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            backdrop-filter: none;
+            width: 100%;
+        }
+    }
+
+    .autocompleteField_list {
+        background-color: $white;
+        border: toRem(1) solid $grey_pale;
+        border-radius: $radius;
+        margin: toRem(10) 0;
+        max-height: toRem(200);
+        overflow-y: scroll;
+    }
+
+    .autocompleteField_btn {
+        text-align: left;
+        padding: toRem(7) toRem(9);
+        width: 100%;
+        font-size: toRem(14);
+        & span {
+            color: $dark;
+            font-weight: 600;
+            margin-right: toRem(5);
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                background: $grey_pale;
+            }
+        }
+    }
+
+    .autocompleteField_empty {
+        padding: toRem(32) toRem(16);
+        text-align: center;
+    }
+
+    // on errors
+    &.autocompleteField_invalid {
+        .autocompleteField_wrapper {
+            border-color: $red;
+        }
+        .autocompleteField_icon {
+            border-color: $red;
+            color: $red;
+        }
+
+        .autocompleteField_input,
+        .autocompleteField_input::placeholder {
+            color: $red;
+        }
+        .autocompleteField_message {
+            display: block;
+            margin-top: toRem(8);
+            color: $red;
+            font-size: toRem(14);
+            font-weight: 400;
+        }
+    }
+}

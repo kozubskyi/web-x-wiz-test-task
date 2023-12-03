@@ -1,0 +1,17 @@
+@import "constants/constans.scss";
+
+.trading {
+    .trading_container {
+        @include flexRow(center, space-between);
+        column-gap: toRem(24);
+    }
+
+    &_content {
+        max-width: toRem(536);
+    }
+
+    .trading_list {
+        padding-top: toRem(24);
+        border-top: toRem(1) solid #e0e3e6;
+    }
+}

@@ -1,0 +1,14 @@
+@import "constants/constans.scss";
+
+main.success {
+   @include flexRow(center, center);
+
+    .success_section {
+        padding: toRem(68) 0;
+        width: 100%;
+    }
+
+    .success_content a {
+        min-width: toRem(268);
+    }
+}

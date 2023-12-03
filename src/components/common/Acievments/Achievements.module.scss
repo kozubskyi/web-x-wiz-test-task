@@ -1,0 +1,152 @@
+@import "constants/constans.scss";
+
+.achievements {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: toRem(24);
+}
+
+.achievement {
+    position: relative;
+    z-index: 6;
+
+    &_wrapper {
+        padding: toRem(16) 0;
+        border: toRem(1) solid transparent;
+        border-radius: toRem(24);
+        transition: all $transition;
+    }
+
+    @media (any-hover: hover) {
+        &_wrapper:hover {
+            border-color: $grey_pale;
+            box-shadow: $box_shadow;
+
+            [data-theme="dark"] & {
+                background-color: $grey;
+            }
+        }
+
+        &_wrapper:hover &_name {
+            color: $dark;
+        }
+    }
+
+    .hexagon {
+        position: relative;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        user-select: none;
+
+        &_wrapper {
+            position: relative;
+            width: fit-content;
+        }
+
+        &_part {
+            position: absolute;
+
+            &_top {
+                &_right,
+                &_left {
+                    top: toRem(3);
+
+                    & img {
+                        transform: rotate(2deg);
+                    }
+                }
+
+                &_right {
+                    right: toRem(1);
+                }
+
+                &_left {
+                    left: 0;
+                }
+            }
+
+            &_center {
+                &_right,
+                &_left {
+                }
+
+                &_right {
+                    right: 0;
+                }
+
+                &_left {
+                    left: 0;
+                }
+            }
+
+            &_bottom {
+                &_right,
+                &_left {
+                    bottom: 0;
+                }
+
+                &_right {
+                    right: 0;
+                }
+
+                &_left {
+                    left: 0;
+                }
+            }
+        }
+
+        &_inner {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: toRem(90);
+            height: toRem(104);
+            z-index: 1;
+
+            svg {
+                position: absolute;
+
+                & path {
+                    fill: $white;
+                    stroke: $grey_pale;
+
+                    [data-theme="dark"] & {
+                        fill: $dark;
+                        stroke: $dark;
+                    }
+                }
+            }
+        }
+    }
+
+    &_footer {
+        margin-top: toRem(12);
+        text-align: center;
+    }
+
+    &_name {
+        font-weight: 600;
+        transition: color $transition;
+    }
+}
+
+.tooltip {
+    &_count {
+        margin-top: toRem(8);
+
+        & span {
+            color: $accent;
+            font-weight: 600;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+    }
+}

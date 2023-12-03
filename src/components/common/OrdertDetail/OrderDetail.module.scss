@@ -1,0 +1,108 @@
+@import "constants/constans.scss";
+
+.types {
+    display: inline-flex;
+    align-items: center;
+    column-gap: toRem(24);
+
+    .type {
+        &_title {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+        }
+
+        &_name {
+            @include flexRow(center, center);
+            margin-top: toRem(8);
+            padding: toRem(10) toRem(16);
+            height: toRem(40);
+            width: fit-content;
+            background-color: $blue_pale;
+            border-radius: $radius;
+            border: toRem(1) solid transparent;
+
+            text-align: center;
+            font-size: toRem(14);
+            font-weight: 600;
+            line-height: 142.857143%; /* 20/14 */
+
+            [data-theme="dark"] & {
+                background-color: $grey_misty_36;
+                border-color: $grey_pale;
+            }
+        }
+    }
+
+    a.type_name {
+        padding: toRem(8) toRem(8) toRem(8) toRem(16);
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: #cfdcf6;
+
+                [data-theme="dark"] & {
+                    background-color: $grey_misty_12;
+                }
+            }
+        }
+    }
+}
+
+.blocks {
+    @include flexColumn();
+    row-gap: toRem(20);
+    margin-top: toRem(20);
+
+    .block {
+        &_title {
+            display: block;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+        }
+
+        &_name {
+            display: block;
+            margin-top: toRem(4);
+            color: $dark;
+        }
+    }
+}
+
+.instruction {
+    margin-top: toRem(20);
+
+    &_title {
+        color: $dark;
+    }
+
+    &_list {
+        list-style-position: inside;
+        margin-top: toRem(8);
+    }
+
+    &_text {
+        color: $dark;
+    }
+}
+
+.info {
+    &_image {
+        position: relative;
+        width: 100%;
+        border-radius: toRem(16);
+
+        & img {
+            border-radius: toRem(16);
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+    &_details {
+        margin-top: toRem(24);
+    }
+
+    .info_scroll {
+        margin: 0;
+    }
+}

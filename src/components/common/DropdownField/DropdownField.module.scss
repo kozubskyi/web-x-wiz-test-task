@@ -1,0 +1,70 @@
+@import "constants/constans.scss";
+
+.dropdownField {
+    &_label {
+        display: inline-block;
+        font-weight: 600;
+        color: $dark;
+        padding-bottom: toRem(8);
+    }
+
+    &_wrapper {
+        position: relative;
+    }
+
+    &_button {
+        @include flexRow(center, flex-start);
+        position: relative;
+        width: 100%;
+        pointer-events: auto;
+
+        & input {
+            pointer-events: none;
+            padding-right: toRem(48);
+        }
+
+        & svg {
+            position: absolute;
+            right: toRem(12);
+            transition: transform $transition;
+        }
+
+        &.active {
+            & input {
+                border-color: $accent;
+                border-radius: $radius $radius 0 0;
+                border-bottom-color: transparent;
+                outline: none;
+
+                [data-theme="dark"] & {
+                    background: $grey_bg_linear;
+                    border-color: transparent;
+                }
+            }
+
+            & svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    // on errors
+    &_invalid {
+        .dropdownField_wrapper {
+            border-color: $red;
+        }
+        .dropdownField_button {
+            border-color: $red;
+            color: $red;
+        }
+
+        .dropdownField_input {
+            border-color: $red;
+            color: $red;
+
+            &::placeholder {
+                color: $red;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@import 'constants/constans.scss';
+
+.sellers {
+  padding: toRem(24) 0;
+
+  .flexbox {
+    display: flex;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,59 @@
+@import "constants/constans.scss";
+
+.article {
+    @include flexRow(center, space-between);
+    column-gap: toRem(24);
+
+    padding: toRem(24) 0;
+    margin-top: toRem(36);
+    border-top: toRem(1) solid $grey_pale;
+    border-bottom: toRem(1) solid $grey_pale;
+
+    &_main {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(16);
+    }
+
+    &_title {
+        font-weight: 600;
+        color: $dark;
+    }
+
+    &_buttons {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(16);
+
+        & button {
+            width: toRem(48);
+            height: toRem(48);
+            border-radius: 50%;
+            border: toRem(1) solid $grey_pale;
+
+            transition: background-color $transition;
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $grey_pale;
+                }
+            }
+        }
+    }
+
+    &_looking {
+        & > p {
+            font-weight: 600;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+
+            & > a {
+                margin-left: toRem(5);
+                color: $accent;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

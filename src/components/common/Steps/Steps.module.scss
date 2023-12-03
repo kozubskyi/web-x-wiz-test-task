@@ -1,0 +1,99 @@
+@import "constants/constans.scss";
+
+.steps {
+    @include flexRow(center);
+    width: 100%;
+    padding-bottom: toRem(34);
+}
+
+.step {
+    flex: 1 1 auto;
+    width: 100%;
+
+    &.first {
+        width: auto;
+        flex: none;
+    }
+
+    &_path {
+        @include flexRow(center);
+        width: 100%;
+    }
+
+    &_line {
+        position: relative;
+        display: inline-block;
+        flex: 1 1 auto;
+        width: 100%;
+        height: toRem(4);
+        background-color: $grey_pale;
+
+        [data-theme="dark"] & {
+            background-color: $grey_lavander;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: $accent;
+            transition: width $transition;
+        }
+    }
+
+    &.active &_line {
+        &::before {
+            width: 100%;
+        }
+    }
+
+    &_block {
+        position: relative;
+        @include flexRow(center, center);
+    }
+
+    &_circle {
+        position: relative;
+        display: inline-block;
+        flex: 0 0 toRem(24);
+        width: toRem(24);
+        height: toRem(24);
+        border: toRem(2) solid $grey_pale;
+        border-radius: 50%;
+        transition: border $transition;
+
+        [data-theme="dark"] & {
+            background-color: $grey_misty_36;
+            border-color: $grey_lavander;
+        }
+    }
+
+    &.active &_circle {
+        border: toRem(6) solid $accent;
+    }
+
+    &_title {
+        display: inline-block;
+        position: absolute;
+        top: 100%;
+        width: fit-content;
+        white-space: nowrap;
+        color: $dark;
+        margin-top: toRem(12);
+    }
+
+    &:first-child {
+        & .step_block {
+            justify-content: left;
+        }
+    }
+
+    &:last-child {
+        & .step_block {
+            justify-content: right;
+        }
+    }
+}

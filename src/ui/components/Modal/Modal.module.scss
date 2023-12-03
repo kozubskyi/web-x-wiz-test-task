@@ -1,0 +1,79 @@
+@import "constants/constans.scss";
+
+.modal {
+    @include flexColumn();
+
+    &_overlay {
+        background: #0000003d;
+    }
+
+    &_default {
+        background-color: $white;
+        box-shadow: none;
+        border-radius: toRem(24);
+        padding: 0;
+
+        min-width: toRem(648);
+        max-width: toRem(648);
+        width: 100%;
+
+        [data-theme="dark"] & {
+            background-color: #20222b;
+        }
+    }
+
+    &_close {
+        @include flexRow(center, center);
+
+        top: toRem(24);
+        right: toRem(24);
+
+        width: toRem(36);
+        height: toRem(36);
+        border-radius: 50%;
+        color: $dark;
+
+        transition: background-color $transition;
+        @media (any-hover: hover) {
+            &:hover {
+                background-color: $grey;
+
+                [data-theme="dark"] & {
+                    background-color: $grey_pale;
+                }
+            }
+        }
+    }
+
+    &_header {
+        padding: toRem(24);
+        border-bottom: toRem(1) solid $grey_pale;
+
+        &.start {
+            text-align: left;
+        }
+
+        &.center {
+            text-align: center;
+        }
+
+        &.end {
+            text-align: right;
+        }
+    }
+
+    &_content {
+        padding: toRem(24);
+        flex: 1 1 auto;
+        font-weight: 600;
+    }
+
+    &_footer {
+        padding: toRem(24);
+        background-color: $grey;
+
+        [data-theme="dark"] & {
+            background-color: $grey;
+        }
+    }
+}

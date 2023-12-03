@@ -1,0 +1,53 @@
+@import "constants/constans.scss";
+
+.tabs {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tab {
+    &_filter {
+        position: relative;
+        @include flexRow(center);
+        column-gap: toRem(8);
+        width: fit-content;
+        line-height: 132.5%;
+        font-weight: 700;
+        padding: toRem(14);
+        transition: color $transition;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            height: toRem(1);
+            width: 0;
+            background-color: $accent;
+            transition: width $transition;
+
+            [data-theme="dark"] & {
+                background-color: $dark;
+            }
+        }
+        @media (any-hover: hover) {
+            &:hover {
+                color: $dark;
+            }
+        }
+
+        &.active {
+            pointer-events: none;
+            color: $accent;
+            &::before {
+                width: 100%;
+            }
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+    }
+}

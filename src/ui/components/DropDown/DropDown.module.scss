@@ -1,0 +1,80 @@
+@import "constants/constans.scss";
+
+.DropDown {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+    height: fit-content;
+
+    padding-top: toRem(10);
+    z-index: 5;
+
+    &_enter {
+        opacity: 0;
+        padding-top: 0;
+    }
+
+    &_enterActive {
+        opacity: 1;
+        padding-top: toRem(10);
+        transition: all $transition;
+    }
+
+    &_exit {
+        opacity: 1;
+        padding-top: toRem(10);
+    }
+
+    &_exitActive {
+        pointer-events: none;
+        opacity: 0;
+        padding-top: 0;
+        transition: all $transition;
+    }
+
+    &_content {
+        width: toRem(312);
+        padding: toRem(16);
+
+        background-color: $grey;
+        border-radius: toRem(20);
+
+        [data-theme="dark"] & {
+            backdrop-filter: $bg_blur;
+            border: toRem(1) solid $grey_pale;
+        }
+    }
+
+    &_secondary {
+        padding-top: 0;
+        left: 0;
+        transform: none;
+
+        border: toRem(1) solid $accent;
+        border-top: none;
+        border-radius: 0 0 $radius $radius;
+        width: 100%;
+        background-color: $white;
+        transition: none;
+
+        [data-theme="dark"] & {
+            background: $grey_bg_linear;
+            border-color: transparent;
+            backdrop-filter: $bg_blur;
+        }
+
+        &_content {
+            background-color: transparent;
+            border: none;
+            backdrop-filter: none;
+            width: auto;
+            padding: 0;
+
+            [data-theme="dark"] & {
+                border: none;
+                backdrop-filter: none;
+            }
+        }
+    }
+}

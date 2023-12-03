@@ -1,0 +1,1026 @@
+{
+  "NavigationPanel": {
+    "home": "Home",
+    "help_center": "Help Center",
+    "help_center_login": "Login / Signup",
+    "help_center_buy": "Buy / Refund",
+    "help_center_sell": "Sell / Payout",
+    "help_center_accounts": "Accounts",
+    "categories": "Categories"
+  },
+  "NotFoundPage": {
+    "title": "Not Found",
+    "message": "Could not find requested resource",
+    "toHome": "Return Home"
+  },
+  "ErrorPage": {
+    "title": "Something went wrong!",
+    "retry": "Try again"
+  },
+  "Header": {
+    "Nav": {
+      "home": "Home",
+      "categories": "Categories",
+      "sellers": "Sellers",
+      "help_center": "Help Center",
+      "contact_us": "Contact us"
+    },
+    "Dropdowns": {
+      "account": "Account",
+      "theme": "Theme",
+      "dark_mode": "Dark Mode",
+      "Authorized": {
+        "profile": "Profile",
+        "messages": "Messages",
+        "bought_roducts": "Bought Products",
+        "achievement": "Achievement",
+        "more": "More",
+        "report": "Report a bug",
+        "logout": "Logout"
+      },
+      "Unauthorized": {
+        "login": "Login",
+        "registration": "Registration"
+      }
+    }
+  },
+  "Footer": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "QucikAccess": {
+      "title": "Qucik Access",
+      "home": "Home",
+      "categories": "Categories",
+      "about": "About us"
+    },
+    "Support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "contact": "Contact Us",
+      "become_buyer": "Become a buyer",
+      "become_seller": "Become a Seller"
+    },
+    "ContactUs": {
+      "title": "Contact Us"
+    },
+    "Payments": {
+      "title": "Payment Methods"
+    },
+    "by_webXwiz": {
+      "primary": "Design and Developed by",
+      "accent": "webXwiz"
+    },
+    "terms_conditions": "Terms & Conditions",
+    "privacy_policy": "Privacy & Policy"
+  },
+  "Home": {
+    "Main": {
+      "title": {
+        "first_path": "Your",
+        "accent": "Resource",
+        "second_path": "For Gaming Accounts!"
+      },
+      "subtitle": "Your Ultimate Destination for Gaming Accounts: Unlock, Trade, and Conquer with Verified and Secure Transactions!",
+      "start_btn": "GET STARTED",
+      "secure_payment": "Secure Payment",
+      "support": "Online Support",
+      "customization": "Store Customization",
+      "chat": "Player-to-Player Chat"
+    },
+    "TopSelling": {
+      "title": {
+        "primary": "Top Selling",
+        "accent": "Maketplaces"
+      },
+      "all": "See All",
+      "arknights_title": "Arknights",
+      "diablo_title": "Diablo IV Gold",
+      "battle_title": "Arknights",
+      "wow_title": "WoW Gold",
+      "online_seller": "Online seller",
+      "see_items": "See items"
+    },
+    "HowWorks": {
+      "title": {
+        "primary": "How It",
+        "accent": "Works?"
+      },
+      "subtitle": "PayForGame is an online platform for buy and sell game products and account, You can become a Seller or Buyer in our platform"
+    },
+    "BecomeSeller": {
+      "title": {
+        "primary": "How to become a",
+        "accent": "Seller?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "signup": "Signup as a seller",
+      "create_goods": "Create your goods",
+      "sell_goods": "Sell your goods",
+      "btn_text": "Become a Seller"
+    },
+    "BecomeBayer": {
+      "title": {
+        "primary": "How to become a",
+        "accent": "Buyer?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "signup": "Signup as a buyer",
+      "find_goods": "Search & Find goods",
+      "buy_goods": "Buy goods",
+      "btn_text": "Become a Buyer"
+    },
+    "BoostGameplay": {
+      "title": {
+        "primary": "Buy Good And Boost Your",
+        "accent": "Gameplay"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "first_item": "Lorem ipsum dolor sit amet, consectetu",
+      "second_item": "Lorem ipsum dolor sit amet, consectetu",
+      "third_item": "Lorem ipsum dolor sit amet, consectetu",
+      "read_more": "Read more"
+    },
+    "TopUsers": {
+      "title": {
+        "primary": "Top",
+        "accent": "Users"
+      },
+      "subtitle": "Champions of the PayForGame: Spotlight on Our Top Users",
+      "sellers": "Sellers",
+      "buyers": "Buyers",
+      "sells": "Sells",
+      "bought": "Bought"
+    },
+    "Features": {
+      "title": {
+        "primary": "Marketplace",
+        "accent": "Features"
+      },
+      "subtitle": "Empowering Gamers, Ensuring Trust: Our Comprehensive Features at a Glance",
+      "Cards": {
+        "feedback_title": "Reputation & Feedback",
+        "feedback_subtitle": "Fostering Trust Through Reputation & Feedback: Building Stronger Connections in the Gaming Community",
+        "protection_title": "Fraud Protection",
+        "protection_subtitle": "Providing Robust Safeguards for Gamers: A Detailed Overview of Our Comprehensive Fraud Protection Measures",
+        "security_title": "Security",
+        "security_subtitle": "Security Beyond Measure: Fortifying Your Gaming Experience with Our Unyielding Commitment to Online Safety"
+      }
+    },
+    "Trading": {
+      "title": {
+        "primary": "Trading Gaming Goods Can Be Risky, But Not With",
+        "accent": "GameVendor"
+      },
+      "subtitle": "We provide a safe and simple trading experience for gamers worldwide. Our PlayerGuardian technology ensures top-notch security for transactions and keeps user info intact by preventing phishing.",
+      "first_item": "Secure Payment",
+      "second_item": "Trustable Sellers",
+      "third_item": "Payment from Any where"
+    },
+    "Rating": {
+      "title": "Community Rating",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "posted_on": "Posted on"
+    }
+  },
+  "Auth": {
+    "Login": {
+      "image_title": "Lorem ipsum dolor sit amet",
+      "image_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia",
+      "title": "Welcome Back",
+      "subtitle": "Login to your account",
+      "user_label": "User name or Email",
+      "user_placeholder": "Enter your user name or email",
+      "password_label": "Password",
+      "password_placeholder": "Enter you password",
+      "reset": "Reset Passwrod",
+      "login_btn": "Login",
+      "login_with": "Or login with",
+      "havent_account": "Didnt have and account yet?",
+      "signup": "Signup"
+    },
+    "TwoFactorAuthentication": {
+      "title": "2FA",
+      "subtitle": "Please enter 2FA code",
+      "login_btn": "Verify"
+    },
+    "Reset": {
+      "title": "Reset Password",
+      "subtitle": "Enter you email or user name",
+      "user_label": "User name or Email",
+      "user_placeholder": "Enter your user name or email",
+      "reset_btn": "Reset Password",
+      "havent_account": "Didnt have and account yet?",
+      "signup": "Signup",
+      "SetPassword": {
+        "title": "Set Password",
+        "subtitle": "Enter your code and new password",
+        "code_label": "Code",
+        "code_placeholder": "Write Code",
+        "password_label": "Password",
+        "password_placeholder": "Write Password",
+        "repeat_password_label": "Repeat Password",
+        "repeat_password_placeholder": "Write Password again",
+        "resend_code": "Send the code again",
+        "success_text": "Reset password has been resend successfully",
+        "resend_text": "Reset password link has been sent to",
+        "return": "Return to password reset"
+      },
+      "SuccessPage": {
+        "title": "Password Reset",
+        "subtitle": "Your password has been reset successfully, you can login with your new password",
+        "btn_text": "Login"
+      }
+    },
+    "Registration": {
+      "title": "Welcome",
+      "subtitle": "Fill out below form to signup ",
+      "buyer_mode": "Im a Buyer",
+      "seller_mode": "Im a Seller",
+      "email_label": "Email",
+      "email_placeholder": "Write email",
+      "name_label": "User name",
+      "name_placeholder": "Write user name",
+      "city_label": "City",
+      "city_placeholder": "Select city",
+      "zip_label": "ZIP code",
+      "zip_placeholder": "Write ZIP code",
+      "street_label": "Street",
+      "street_placeholder": "Select street",
+      "number_label": "Phone Number",
+      "password_label": "Password",
+      "password_placeholder": "Write Password",
+      "repeat_password_label": "Repeat Password",
+      "repeat_password_placeholder": "Write Password again",
+      "over_18": "I'm over 18 years old",
+      "register_btn": "Signup",
+      "clicking_signup": "By clicking on “Signup” button, you confirm that you accept the",
+      "terms_conditions": "Terms and Conditions",
+      "register_with": "Or signup with",
+      "have_account": "Do you have an account?",
+      "login": "Login"
+    },
+    "EmailVerification": {
+      "title": "Link Sent",
+      "subtitle": "Verification link has been sent to",
+      "resend_link": "Resend link in:",
+      "resend_btn": "Resend",
+      "message_text": "A confirmation email has been sent successfully",
+      "VerifiedPage": {
+        "title": "Congratulations!",
+        "subtitle": "Your email address has been verified successfully, start you journey in PayForGame",
+        "btn_text": "See Offers"
+      }
+    },
+    "PhoneVerification": {
+      "title": "Verification",
+      "subtitle": "Please enter 5-dgital code we've sent to",
+      "resend_link": "Resend link in:",
+      "send_code": "Verify",
+      "resend_btn": "Resend",
+      "message_text": "Code sent successfully",
+      "message_title": "Code sent",
+      "VerifiedPage": {
+        "title": "Congratulations!",
+        "subtitle": "Your account has been verified successfully, start list your products",
+        "btn_text": "Seller Panel"
+      }
+    }
+  },
+  "Validation": {
+    "email_format": "Email format is not valid",
+    "min_length": "Minimum 8 characters",
+    "min_one_num": "Minimum 1 digit",
+    "min_one_lower": "Minimum 1 lowercase character",
+    "not_match": "Passwords don't match"
+  },
+  "Messages": {
+    "Error": {
+      "something_wrong": "Something is wrong"
+    },
+    "Success": {
+      "resend_link": "Link has been resend"
+    }
+  },
+  "AboutPage": {
+    "Main": {
+      "title": {
+        "primary": "Gamers Trusted",
+        "accent": "Marketplace"
+      },
+      "subtitle": "Elevating Gaming Experiences Through Secure Transactions and Community Connectivity"
+    },
+    "Calculations": {
+      "seller": "Active Seller",
+      "offer": "Offer & Product",
+      "game": "Game",
+      "avg": "Avg monthly offer"
+    },
+    "WhoWe": {
+      "title": {
+        "primary": "Who We",
+        "accent": "Are?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Safety": {
+      "title": {
+        "primary": "Safety In Our",
+        "accent": "Website"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Advantages": {
+      "title": {
+        "primary": "Advantages Of Our",
+        "accent": "Website"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "List": {
+        "first_title": "Lorem ipsum dolor sit amet",
+        "first_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "second_title": "Lorem ipsum dolor sit amet",
+        "second_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "third_title": "Lorem ipsum dolor sit amet",
+        "third_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "fourth_title": "Lorem ipsum dolor sit amet",
+        "fourth_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    },
+    "Activity": {
+      "title": {
+        "primary": "What We",
+        "accent": "Do"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "Cards": {
+        "buy_title": "Buy and Sell",
+        "buy_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        "community_title": "Active Community",
+        "community_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "payment_title": "Secure Payment",
+        "payment_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation "
+      }
+    }
+  },
+  "ContactPage": {
+    "title": "Contact us",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "fullName_label": "Full name",
+    "fullName_placeholder": "Write your full name",
+    "email_label": "Email Address",
+    "email_placeholder": "Write your email address",
+    "phone_label": "Phone Number (Optional)",
+    "subject_label": "Subject",
+    "subject_placeholder": "Select a subject",
+    "message_label": "Your message",
+    "message_placeholder": "Write your message",
+    "send": "Send"
+  },
+  "HeplCenterPage": {
+    "Main": {
+      "title": {
+        "primary": "Help",
+        "accent": "Center"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+    },
+    "Cards": {
+      "login_title": "Login / Signup",
+      "login_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "buy_title": "Buy / Refund",
+      "buy_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "sell_title": "Sell / Payout",
+      "sell_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "accounts_title": "Accounts",
+      "accounts_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "btn_text": "Read More"
+    },
+    "FAQ": {
+      "title": "FAQs",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "Spoilers": {
+        "transfers_title": "How does the account transfer process work?",
+        "transfers_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "security_title": "Are the game accounts on your platform safe to buy?",
+        "security_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "payments_title": "What payment methods do you accept?",
+        "payments_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "support_title": "What happens if there is an issue with my purchase or sale?",
+        "support_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "have_question": "Still have question?",
+      "ask": "Ask a question",
+      "ask_question": "Ask a Question",
+      "text_placeholder": "Write your question",
+      "submit": "Submit"
+    },
+    "table_title": "Table of content",
+    "subjects_title": "Other subjects",
+    "article_tittle": "Was this article helpful?",
+    "article_looking": "Can’t find what you’re looking for?",
+    "article_contact": "Contact us",
+    "LoginSignup": {
+      "Table": {
+        "sponsorships": "Sponsorships",
+        "become_seller": "How can I become a Seller?",
+        "register_buyer": "How can I register as a Buyer?",
+        "undelivered": "I didn't receive a PIN code to register.",
+        "verification": "I didn't receive any e-mail, how can I verify my account?"
+      }
+    },
+    "BuyRefund": {
+      "Table": {
+        "topic1": "Buy Refund Topic 1",
+        "topic2": "Buy Refund Topic 2",
+        "topic3": "Buy Refund Topic 3"
+      }
+    },
+    "SellPayout": {
+      "Table": {
+        "topic1": "Sell Payout Topic 1",
+        "topic2": "Sell Payout Topic 2",
+        "topic3": "Sell Payout Topic 3"
+      }
+    },
+    "Accounts": {
+      "Table": {
+        "topic1": "Accounts Topic 1",
+        "topic2": "Accounts Topic 2",
+        "topic3": "Accounts Topic 3"
+      }
+    }
+  },
+  "CategoriesPage": {
+    "FilterLetters": {
+      "a": "A",
+      "b": "B",
+      "c": "C",
+      "d": "D",
+      "e": "E",
+      "f": "F",
+      "g": "G",
+      "h": "H",
+      "i": "I",
+      "j": "J",
+      "k": "K",
+      "l": "L",
+      "m": "M",
+      "n": "N",
+      "o": "O",
+      "p": "P",
+      "q": "Q",
+      "r": "R",
+      "s": "S",
+      "t": "T",
+      "u": "U",
+      "v": "V",
+      "w": "W",
+      "x": "X",
+      "y": "Y",
+      "z": "Z"
+    },
+    "all_subaregories": "All subaregories",
+    "no_categories": "No Categories"
+  },
+  "CategoryPage": {
+    "Search": {
+      "Form": {
+        "search_label": "Search",
+        "search_placeholder": "Search Product",
+        "platform_label": "Platform",
+        "platform_placeholder": "All Platforms",
+        "level_label": "Level",
+        "stage_label": "Stage",
+        "min": "Min",
+        "max": "Max",
+        "only_online": "Only Online Sellers",
+        "submit": "Search"
+      }
+    },
+    "Products": {
+      "TableHead": {
+        "seller": "Seller",
+        "title": "Title",
+        "platform": "Platform",
+        "level": "Level",
+        "stage": "Stage",
+        "price": "Price"
+      },
+      "confident_level": "Confident Level:",
+      "more": "See More"
+    }
+  },
+  "ProductPage": {
+    "Order": {
+      "Ordering": {
+        "title": "Ordering",
+        "server": "Server",
+        "short_description": "Short description",
+        "detailed_description": "Detailed description",
+        "Instruction": {
+          "title": "if you want to buy the offer , please follow the steps below:",
+          "first_step": "send me your information login account (after the operation you can change your password)",
+          "second_step": "Exit the game.",
+          "third_step": "Wait from 5 minutes to 30 minutes"
+        },
+        "payment_title": "Payment Method",
+        "payment_placeholder": "Not selected",
+        "payment_from": "From",
+        "PaymentMethods": {
+          "bank_card": "Bank Card",
+          "crypto_currency": "Crypto Currency",
+          "pay_pal": "PayPal"
+        },
+        "buy": "Buy",
+        "select_method": "Need select payment method"
+      }
+    },
+    "Chat": {
+      "relates_to": "This message is relates to:",
+      "write_message": "Write your message",
+      "send": "Send",
+      "Modal": {
+        "title": "Report Seller",
+        "write_description": "Write Description",
+        "attachment": "Attachment (Optional)",
+        "upoad_files": "Your Files:",
+        "send": "Send Report"
+      }
+    },
+    "Feedback": {
+      "reviews": "Reviews",
+      "rating": "Rating"
+    }
+  },
+  "PurchasePage": {
+    "OrderDetails": {
+      "title": "Order Details",
+      "category": "Category",
+      "type": "Type",
+      "platform": "Platform",
+      "short_description": "Short description",
+      "detailed_description": "Detailed description",
+      "Instruction": {
+        "title": "if you want to buy the offer , please follow the steps below:",
+        "first_step": "send me your information login account (after the operation you can change your password)",
+        "second_step": "Exit the game.",
+        "third_step": "Wait from 5 minutes to 30 minutes"
+      }
+    },
+    "Payment": {
+      "title": "Payment",
+      "payment_method": "Payment Method",
+      "product_price": "Product Price",
+      "fee": "Fee",
+      "total": "Total",
+      "pay": "Pay"
+    },
+    "Success": {
+      "title": "Purchase was successful",
+      "subtitle": "Your purchase has been successful and seller will be send your product soon",
+      "btn_text": "See Product"
+    }
+  },
+  "ProfilePage": {
+    "Sidebar": {
+      "level": "Lv",
+      "confident_lvl": "Confident Lv:",
+      "profile": "Profile",
+      "messages": "Messages",
+      "bought_roducts": "Bought Products",
+      "achievement": "Achievement",
+      "payment": "Payment",
+      "notifications": "Notifications",
+      "security": "Security",
+      "logout": "Logout",
+      "Seller": {
+        "financial_balance": "Financial & Balance",
+        "sales_offers": "Sales & Offers",
+        "top_sellers": "Top Sellers",
+        "new_offer": "Create new offer"
+      }
+    },
+    "Profile": {
+      "change_background": "Change background",
+      "level": "Lv",
+      "Form": {
+        "email_label": "Email",
+        "email_placeholder": "Write email",
+        "name_label": "User name",
+        "name_placeholder": "Write user name",
+        "city_label": "City",
+        "city_placeholder": "Select city",
+        "zip_label": "ZIP code",
+        "zip_placeholder": "Write ZIP code",
+        "street_label": "Street",
+        "street_placeholder": "Select street",
+        "number_label": "Phone Number",
+        "save_changes": "Save Changes",
+        "discard": "Discard"
+      },
+      "Modal": {
+        "title": "Verification Code",
+        "enter_code": "Please enter 5-dgital code we've sent to",
+        "text_btn": "Verify",
+        "resend_text": "Resend link in:",
+        "resend_btn": "Resend",
+        "successfully": "Phone is Successfully Verified"
+      },
+      "BackfroundModal": {
+        "title": "Change background",
+        "upload_image": "Upload an image",
+        "drag_or_click": "Drag or click to choose a file",
+        "max_size": "Max size: 2 mg, only PNG or JPEG",
+        "select_color": "Or select a color",
+        "text_btn": "Change background"
+      },
+      "successfully_updated": "Successfully Updated"
+    },
+    "Messages": {
+      "search_conversation": "Search Conversation",
+      "all_messages": "All Messages",
+      "unread_messages": "Unread",
+      "old_messages": "Old Messages",
+      "select_converstation": "Select a converstation",
+      "select_converstation_subtitle": "Select a conversation and start to chat",
+      "no_converstation": "There is no converstation",
+      "no_converstation_subtitle": "Oops! there is no conversation yet, Explore in offers and start chat with sellers"
+    },
+    "BoughtProducts": {
+      "title": "Bought Products",
+      "see_details": "See Details",
+      "ProductDetail": {
+        "title": "Product Details",
+        "waiting_details": "Waiting for details",
+        "waiting_details_subtitle": "Seller will be send you product details until",
+        "didnt_receive": "Didn't receive details? Send Report",
+        "waiting_confirm": "Waiting for confirm",
+        "waiting_confirm_subtitle": "Seller has been sent details to you. please check your inbox until",
+        "report": "Report",
+        "confirm": "Confirm",
+        "ProductInfo": {
+          "title": "Product Info",
+          "category": "Category",
+          "type": "Type",
+          "server": "Server",
+          "short_description": "Short description",
+          "detailed_description": "Detailed description",
+          "Instruction": {
+            "title": "if you want to buy the offer , please follow the steps below:",
+            "first_step": "send me your information login account (after the operation you can change your password)",
+            "second_step": "Exit the game.",
+            "third_step": "Wait from 5 minutes to 30 minutes"
+          }
+        },
+        "PaymentInfo": {
+          "title": "Payment Info",
+          "seller": "Seller",
+          "price": "Price",
+          "time_date": "Time & Date",
+          "method": "method",
+          "payment_code": "Payment Code",
+          "payment_status": "Payment Status",
+          "card_number": "Card Number"
+        },
+        "Reviews": {
+          "title": "Review",
+          "empty_review": "There isn't review",
+          "empty_review_subtitle": "There isn't any review yet, Be first and leave first review"
+        },
+        "SendReview": {
+          "title": "Your Review",
+          "write_review": "Write your review",
+          "required_rating": "Required set a rating",
+          "send": "Send",
+          "success_title": "Review successfully",
+          "success_subtitle": "Review sent successfully"
+        }
+      }
+    },
+    "Achievement": {
+      "title": "Achievement",
+      "of": "of"
+    },
+    "Payment": {
+      "title": "Payment",
+      "Methods": {
+        "title": "Payment Methods",
+        "stripe": "Stripe",
+        "stripe_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "paypal": "Paypal",
+        "paypal_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "crypto": "Crypto",
+        "crypto_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "connect": "Connect"
+      },
+      "history": "History",
+      "search_label": "Search",
+      "search_placeholder": "Search Transaction code",
+      "date_label": "Transaction Date",
+      "date_from": "From",
+      "date_to": "To",
+      "Table": {
+        "payment_code": "Payment Code",
+        "product_name ": "Product Name",
+        "time_date": "Time & Date",
+        "status": "Status",
+        "amount": "Amount",
+        "null": "",
+        "no_results": "No results"
+      },
+      "Empty": {
+        "title": "You don't have payment!",
+        "subtitle": "You didn't make a payment yet"
+      },
+      "Details": {
+        "title": "Peyment Details",
+        "payment_code": "Payment Code",
+        "status": "Status",
+        "method": "Method",
+        "card_number": "Card Number",
+        "amount": "Amount",
+        "time_date": "Time & Date",
+        "product": "Product",
+        "to_product": "Running"
+      }
+    },
+    "Notifications": {
+      "title": "Notifications",
+      "mark_all_read": "Mark all as read"
+    },
+    "Security": {
+      "title": "Security",
+      "current_password_label": "Current Password",
+      "current_password_placeholder": "Write your password",
+      "new_password_label": "New Password",
+      "new_password_placeholder": "Write new password",
+      "repeat_new_password_label": "Repeat New Password",
+      "repeat_new_password_placeholder": "Write new password again",
+      "change_btn": "Change Passwrod",
+      "2fa_tittle": "2FA",
+      "2fa_subtittle": "By enabling 2FA option increase your account security and protect it from unwanted logins",
+      "Modal": {
+        "title": "Enable 2FA",
+        "download_app": "Download app",
+        "scan_qr": "Scan QR",
+        "enter_code": "Enter Code",
+        "enable": "Enable",
+        "next": "Next",
+        "cancel": "Cancel",
+        "first_step_text": "Download and install an authenticator app on your mobile device.",
+        "second_step_text": "Use the app to scan this QR code.",
+        "generated_successfully_title": "QR Code generated successfully",
+        "third_step_text": "Enter the code generated by the app.",
+        "fa_enabled": "2FA Enabled",
+        "fa_enabled_subtitle": "Your 2FA has been enabled successfully",
+        "ok": "Ok"
+      }
+    },
+    "FinancialBalance": {
+      "title": "Financial $ Balance",
+      "current_balance": "Current Balance",
+      "withdraw_btn": "Withdraw",
+      "income": "Income",
+      "total_income": "Total Income",
+      "last_week": "Last Week",
+      "last_24": "Last 24 hrs",
+      "Empty": {
+        "title": "You don't have payment!",
+        "subtitle": "You didn't receive payment yet"
+      },
+      "Details": {
+        "title": "Peyment Details",
+        "payment_code": "Payment Code",
+        "status": "Payment Status",
+        "method": "Method",
+        "type": "Type",
+        "amount": "Amount",
+        "time_date": "Time & Date",
+        "product": "Product",
+        "to_product": "Running",
+        "buyer": "Buyer"
+      }
+    },
+    "SalesOffers": {
+      "title": "Sales & Offers",
+      "new_offer": "Create new offer",
+      "total_offers": "Total Offers",
+      "active_offers": "Active Offers",
+      "sold_offers": "Sold offers",
+      "open_requests": "Open Requests",
+      "see_details": "See Details",
+      "overview": "Overview",
+      "top_sells": "Top Sells",
+      "total_sells": "Total Sells",
+      "sales_offers": "Sales & Offers",
+      "search_label": "Search",
+      "search_placeholder": "Search Offer",
+      "date_label": "Create Date",
+      "date_from": "From",
+      "date_to": "To",
+      "Table": {
+        "title": "Title",
+        "category_subcategory": "Category, Subcategory",
+        "created_date": "Created Date",
+        "quantity": "Quantity",
+        "no_results": "No results"
+      },
+      "empty_title": "You don't have offer!",
+      "empty_subtitle": "You didn't create an offer yet, create your first offer by clicking on “Create offer” button",
+      "empty_btn": "Create offer",
+      "RequestDetails": {
+        "title": "Request Details",
+        "have_sent_details": "I have sent details",
+        "waiting_confirmation": "Waiting for buyer confirmation",
+        "product_info": "Product Info",
+        "price": "Price",
+        "qyt": "QYT",
+        "type": "Type",
+        "server": "Server",
+        "short_description": "Short description",
+        "detailed_description": "Detailed description",
+        "Instruction": {
+          "title": "if you want to buy the offer , please follow the steps below:",
+          "first_step": "send me your information login account (after the operation you can change your password)",
+          "second_step": "Exit the game.",
+          "third_step": "Wait from 5 minutes to 30 minutes"
+        },
+        "request_details": "Request Details",
+        "category": "Category",
+        "date": "Request date & time",
+        "sending_deadline": "Sending details deadline",
+        "sending_deadline_tooltip": "If you don't send details until deadline the order will be canceled by Admin and it may cause negative effect on your profile",
+        "confirmation_deadline": "Confirmation deadline",
+        "confirmation_deadline_tooltip": "If you don't send details until deadline the order will be canceled by Admin and it may cause negative effect on your profile",
+        "buyer": "Buyer",
+        "Modal": {
+          "title": "Send Details",
+          "text": "Are you sure you've sent product details to the buyer?",
+          "cancel": "Cancel",
+          "yes": "Yes"
+        }
+      },
+      "ProductDetails": {
+        "title": "Product Details",
+        "delete": "Delete",
+        "edit": "Edit",
+        "product_info": "Product Info",
+        "price": "Price",
+        "qyt": "QYT",
+        "type": "Type",
+        "server": "Server",
+        "short_description": "Short description",
+        "detailed_description": "Detailed description",
+        "Instruction": {
+          "title": "if you want to buy the offer , please follow the steps below:",
+          "first_step": "send me your information login account (after the operation you can change your password)",
+          "second_step": "Exit the game.",
+          "third_step": "Wait from 5 minutes to 30 minutes"
+        },
+        "sales": "Sales",
+        "search_label": "Search",
+        "search_placeholder": "Search buyer",
+        "date_label": "Bought Date",
+        "date_from": "From",
+        "date_to": "To",
+        "Empty": {
+          "title": "You don't have sale!",
+          "subtitle": "You didn't made a sell yet"
+        },
+        "Modal": {
+          "title": "Delete Product",
+          "text": "Are you sure to delete this product?",
+          "cancel": "Cancel",
+          "delete": "Delete"
+        }
+      },
+      "Edit": {
+        "title": "Edit"
+      }
+    },
+    "TopSellers": {},
+    "CreateOffer": {
+      "title": "Create Offer",
+      "Form": {
+        "quantity_label": "Quantity",
+        "category_label": "Category",
+        "category_placeholder": "Select a category",
+        "subcategory_label": "Subcategory",
+        "subcategory_placeholder": "Subcategory",
+        "price_label": "Price",
+        "price_placeholder": "Price",
+        "platform_label": "Platform",
+        "platform_placeholder": "Platform",
+        "short_description_language_label": "Short description Language",
+        "short_description_language_value": "English",
+        "description_language_label": "Description Language",
+        "description_language_value": "English",
+        "short_descriptionn_label": "Short Description",
+        "short_description_placeholder": "Write a short description",
+        "description_label": "Description Language",
+        "description_placeholder": "Write a  description",
+        "cover_label": "Cover",
+        "cover_title": "Drag or click to choose a file",
+        "cover_subtitle": "Max size: 2 mg, only PNG or JPEG"
+      },
+      "create": "Create offer"
+    }
+  },
+  "SellersPage": {
+    "Sidebar": {
+      "dashboard": "Dashboard",
+      "messages": "Messages",
+      "sections": "Sections",
+      "sellers": "Sellers",
+      "buyers": "Buyers",
+      "financial": "Financial",
+      "achievements": "Achievements",
+      "security": "Security",
+      "report": "Report",
+      "logout": "Logout"
+    },
+    "Stats": {
+      "sellers": "Sellers",
+      "top_sellers": "Top Sellers",
+      "TopSellersFilter": {
+        "all_time": "All Time",
+        "this_year": "This Year",
+        "this_month": "This Month",
+        "sells": "Sells"
+      },
+      "Filters": {
+        "search": "Search",
+        "search_seller": "Search Seller",
+        "signup_date": "Signup Date",
+        "from": "From",
+        "to": "To"
+      },
+      "Table": {
+        "user_name": "User Name",
+        "number": "Number",
+        "signup_date": "Signup Date",
+        "sells": "Sells",
+        "of": "of"
+      }
+    },
+    "Modal": {
+      "ban_seller": "Ban seller",
+      "unban_seller": "Unban seller",
+      "sure_to_ban": "Are you sure to ban this seller?",
+      "sure_to_unban": "Are you sure to unban this seller?",
+      "cancel": "Cancel",
+      "ban": "Ban",
+      "unban": "Unban"
+    },
+    "no_sellers": "No sellers",
+    "no_sellers_subtitle": "There are currently no sellers"
+  },
+  "SellerPage": {
+    "title": "Seller Profile",
+    "level": "Lv.",
+    "confident_lvl": "Confident Lv:",
+    "total_offers": "Total Offers",
+    "Tabs": {
+      "offers": "Offers",
+      "reviews": "Reviews",
+      "achievements": "Achievements"
+    },
+    "history": "History",
+    "search_label": "Search",
+    "search_placeholder": "Search offer",
+    "price_label": "Price range",
+    "price_from": "From",
+    "price_to": "To",
+    "Table": {
+      "title": "Title",
+      "category_subcategory": "Category, Subcategory",
+      "price": "Price",
+      "null": ""
+    },
+    "no_products": "No Products",
+    "no_products_subtitle": "No Products",
+    "no_results": "No results",
+    "no_reviews": "No reviews",
+    "no_reviews_subtitle": "No reviews",
+    "see_more": "See More",
+    "no_achievements": "No Achievements",
+    "no_achievements_subtitle": "No Achievements"
+  },
+  "Rating": {
+    "review": "Review"
+  },
+  "Achievements": {
+    "of": "of"
+  },
+  "Table": {
+    "of": "of",
+    "no_page": "No such page",
+    "no_page_subtitle": "There is no such page",
+    "to_first": "First page"
+  },
+  "Charts": {
+    "Filters": {
+      "monthly": "Monthly",
+      "daily": "Daily"
+    }
+  }
+}

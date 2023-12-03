@@ -1,0 +1,92 @@
+@import "constants/constans.scss";
+
+.InputBoxes {
+    @include flexRow(center, flex-start);
+}
+
+.inputBox {
+    @include flexRow(center);
+    flex: 1 1 auto;
+
+    & input {
+        width: toRem(48);
+        height: toRem(48);
+        border: toRem(1) solid $grey_pale;
+        border-radius: $radius;
+        color: $dark;
+        font-weight: 600;
+        text-align: center;
+        transition: all $transition;
+        outline: none;
+
+        [data-theme="dark"] & {
+            border-color: transparent;
+            background-color: $grey_misty_36;
+        }
+    }
+
+    & span {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        flex: 1 1 auto;
+        height: toRem(1);
+        margin: 0 toRem(16);
+        background-color: $grey_pale;
+        overflow: hidden;
+
+        [data-theme="dark"] & {
+            background-color: $grey_misty_36;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 0;
+            height: 100%;
+            z-index: 1;
+            transition: all 0.3s ease-in;
+        }
+
+        &::after {
+            left: 0;
+            background-color: $green;
+        }
+        &::before {
+            right: 0;
+            background-color: $red;
+        }
+    }
+
+    &.success {
+        & input {
+            border-color: $green;
+        }
+
+        & span {
+            &::after {
+                width: 100%;
+            }
+            &::before {
+                width: 0;
+            }
+        }
+    }
+
+    &.error {
+        & input {
+            border-color: $red;
+        }
+
+        & span {
+            &::after {
+                width: 0;
+            }
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	min-width: $minWidth + px;
+}
+body {
+	color: $mainColor;
+	line-height: $lineHeight;
+	font-size: $fontSize;
+	background-color: $white;
+	//text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+	font-weight: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+input {
+	height: toRem(48);
+	&:-webkit-autofill,
+	&:-webkit-autofill:hover,
+	&:-webkit-autofill:focus,
+	&:-webkit-autofill:active {
+		-webkit-box-shadow: 0 0 0 toRem(30) $white inset !important;
+
+		[data-theme="dark"] & {
+			-webkit-box-shadow: 0 0 0 toRem(30) $grey inset !important;
+		}
+	}
+	&:-webkit-autofill {
+		-webkit-text-fill-color: $dark !important;
+	}
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+textarea {
+	resize: none;
+}
+
+input,
+textarea {
+	width: 100%;
+
+	font-size: toRem(16);
+	line-height: 137.5%; /* 22/16 */
+	font-weight: 600;
+	color: $dark;
+
+	padding: toRem(16);
+	background-color: transparent;
+	border: toRem(1) solid $grey_pale;
+	border-radius: $radius;
+	outline: none;
+
+	&::placeholder {
+		font-weight: 400;
+		color: $mainColor;
+	}
+
+	&:focus {
+		outline: toRem(1) solid $accent_light;
+	}
+
+	[data-theme="dark"] & {
+		background-color: $grey_misty_36;
+		border-color: transparent;
+	}
+}

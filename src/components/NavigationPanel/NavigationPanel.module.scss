@@ -1,0 +1,72 @@
+@import "constants/constans.scss";
+
+.nav {
+    overflow-x: auto;
+    padding: toRem(12) 0;
+
+    &_wrapper {
+        padding: toRem(12) 0;
+    }
+
+    &_list {
+        display: inline-flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+
+        &::-webkit-scrollbar {
+            width: toRem(5);
+            height: toRem(5);
+        }
+    }
+
+    &_item {
+        @include flexRow(center, flex-start);
+    }
+
+    &_link {
+        font-weight: 700;
+        line-height: 137.5%; /* 22/16 */
+        text-transform: capitalize;
+
+        [data-theme="dark"] & {
+            color: $mainColor;
+        }
+
+        &:not(&_active) {
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: toRem(1);
+                background-color: $mainColor;
+                transition: width $transition;
+
+                [data-theme="dark"] & {
+                    background-color: $mainColor;
+                }
+            }
+            @media (any-hover: hover) {
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+
+        &_active {
+            color: $accent;
+            pointer-events: none;
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+    }
+
+    &_arrow {
+        margin: 0 toRem(12);
+    }
+}

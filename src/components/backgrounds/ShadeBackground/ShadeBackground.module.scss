@@ -1,0 +1,14 @@
+@import "constants/constans.scss";
+
+.shadeBackground {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include adaptiveValue("height", 1060, 776, 2100, 1440, 1);
+    z-index: -1;
+    opacity: 0.05;
+
+    [data-theme="dark"] & {
+        opacity: 0.5;
+    }
+}

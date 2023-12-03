@@ -1,0 +1,49 @@
+@import "constants/constans.scss";
+
+.form {
+    @include flexRow(flex-end);
+    gap: toRem(24);
+
+    &_code {
+        flex: 1 1 auto;
+    }
+
+    &_label {
+        font-weight: 600;
+        color: $dark;
+    }
+
+    &_date {
+        &_fields {
+            @include flexRow(center);
+            gap: toRem(24);
+            margin-top: toRem(8);
+            max-width: toRem(392);
+        }
+    }
+
+    &_input {
+        margin-top: toRem(8);
+    }
+
+    .form_button {
+        width: toRem(48);
+        min-width: auto;
+        padding: 0;
+
+        [data-theme="dark"] & {
+            background-color: $grey_misty_36;
+            border-color: transparent;
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $grey_misty_12;
+                }
+            }
+        }
+    }
+
+    .form_filter {
+        border-color: transparent;
+    }
+}

@@ -1,0 +1,218 @@
+@import "./base/root";
+@import "./base/animations";
+@import "constants/constans";
+@import "./base/null.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: toRem(3);
+    height: toRem(3);
+
+    &-thumb {
+        background-color: $accent;
+        border-radius: $radius;
+
+        [data-theme="dark"] & {
+            background-color: #d8deeb3d;
+        }
+    }
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+}
+
+section {
+    &:not(:first-child) {
+        padding-top: toRem(160);
+    }
+}
+// Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper {
+    min-height: 100%;
+    @include flexColumn();
+    // Прижимаем footer
+    > main {
+        flex: 1 1 auto;
+    }
+    // Фикс для слайдеров
+    > * {
+        min-width: 0;
+    }
+}
+
+// Текст  ======================================================================================================================================================================================================================
+h1 {
+    font-size: toRem(68);
+    font-weight: 600;
+    color: $dark;
+    line-height: 111.764706%; /* 76/68 */
+
+    & span {
+        @include color-accent();
+
+        [data-theme="dark"] & {
+            color: $dark;
+            -webkit-text-fill-color: initial;
+        }
+    }
+}
+
+h2 {
+    font-size: toRem(32);
+    font-weight: 600;
+    color: $dark;
+    line-height: 125%; /* 40/32 */
+
+    & span {
+        @include color-accent();
+
+        [data-theme="dark"] & {
+            color: $dark;
+            -webkit-text-fill-color: initial;
+        }
+    }
+}
+
+h3 {
+    font-size: toRem(28);
+    font-weight: 600;
+    color: $dark;
+    line-height: 128.571429%; /* 36/28 */
+}
+
+h4 {
+    font-size: toRem(24);
+    font-weight: 600;
+    color: $dark;
+    line-height: 133.333333%; /* 32/24 */
+}
+
+h5 {
+    font-size: toRem(20);
+    font-weight: 600;
+    color: $dark;
+    line-height: 140%; /* 28/20 */
+}
+
+.main-subtitle {
+    margin-top: toRem(24);
+
+    color: $dark_purple;
+    font-size: toRem(20);
+    line-height: 140%; /* 28/20 */
+    font-weight: 600;
+
+    [data-theme="dark"] & {
+        color: $mainColor;
+    }
+}
+
+.text {
+    &_subtitle {
+        font-size: toRem(16);
+        font-weight: 400;
+        color: $mainColor;
+        margin-top: toRem(12);
+    }
+
+    &_body {
+        font-size: toRem(14);
+        color: $mainColor;
+    }
+
+    &_caption {
+        font-size: toRem(14);
+        color: $mainColor;
+    }
+
+    &_semiBold {
+        font-weight: 600;
+    }
+
+    &_primary {
+        color: $dark;
+    }
+
+    &_secondary {
+        color: $mainColor;
+    }
+
+    &_accent {
+        @include color-accent();
+
+        [data-theme="dark"] & {
+            color: $dark;
+            -webkit-text-fill-color: initial;
+        }
+    }
+
+    &_invalid {
+        color: $red;
+        font-size: toRem(14);
+    }
+}
+
+input._invalid,
+textarea._invalid {
+    outline: none;
+    color: $red;
+    border-color: $red;
+
+    &::placeholder {
+        color: $red;
+    }
+}
+
+.auth_form {
+    margin-top: toRem(24);
+
+    .auth_button {
+        position: relative;
+        margin-top: toRem(16);
+        overflow: hidden;
+        width: 100%;
+    }
+}
+
+.image {
+    &_white {
+        display: inline-block;
+
+        [data-theme="dark"] & {
+            display: none;
+        }
+    }
+
+    &_dark {
+        display: none;
+
+        [data-theme="dark"] & {
+            display: inline-block;
+        }
+    }
+}
+
+/* ----- Модальное окно по центру адаптировано ----- */
+.react-responsive-modal-root .react-responsive-modal-container {
+    @include flexRow(center, center);
+}
+
+/* ----- Fixed Screen Glitch When Close Modal ----- */
+.react-responsive-modal-overlay,
+.react-responsive-modal-container,
+.react-responsive-modal-modal {
+    animation-fill-mode: forwards !important;
+}
+
+// acordion animation
+.szh-accordion__item-content {
+    transition: height $transition;
+}
+.szh-accordion__item-btn {
+    width: 100%;
+}

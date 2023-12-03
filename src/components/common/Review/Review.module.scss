@@ -1,0 +1,72 @@
+@import "constants/constans.scss";
+
+.review {
+    padding: toRem(16);
+
+    &:not(:first-child) {
+        border-top: toRem(1) solid $grey_pale;
+    }
+
+    &_top {
+        @include flexRow(flex-start, space-between);
+        column-gap: toRem(24);
+    }
+
+    .author {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(12);
+
+        &_image {
+            & img {
+                border-radius: 50%;
+            }
+        }
+
+        &_name {
+            font-weight: 700;
+            color: $dark;
+        }
+
+        &_rating {
+            margin-top: toRem(8);
+        }
+    }
+
+    &_date {
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+    }
+
+    &_body {
+        color: $dark;
+        margin-top: toRem(16);
+    }
+}
+
+.send {
+    &_top {
+        padding-bottom: toRem(24);
+    }
+
+    &_textarea {
+        height: toRem(160);
+    }
+
+    &_footer {
+        @include flexRow(center);
+        margin-top: toRem(24);
+        column-gap: toRem(24);
+    }
+
+    .send_button {
+        margin-left: auto;
+
+        [data-theme="dark"] & {
+            border-color: transparent;
+        }
+
+        &_box {
+            flex: 1 1 auto;
+        }
+    }
+}

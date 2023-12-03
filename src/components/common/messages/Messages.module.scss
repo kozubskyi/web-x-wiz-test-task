@@ -1,0 +1,85 @@
+@import "constants/constans.scss";
+
+.message {
+    position: fixed;
+    right: toRem(15);
+    top: toRem(15);
+    border: toRem(1) solid $green;
+    border-radius: toRem(24);
+    box-shadow: 0 toRem(12) toRem(24) toRem(-4) #00000005;
+    width: toRem(536);
+
+    overflow: hidden;
+    z-index: 1000;
+
+    &_top {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(12);
+        padding: toRem(24);
+        background-color: $green;
+        color: $white;
+        font-weight: 600;
+        font-size: toRem(20);
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_body {
+        background-color: $white;
+        padding: toRem(24);
+        color: $dark;
+        text-align: left;
+
+        [data-theme="dark"] & {
+            background-color: $grey;
+            backdrop-filter: $bg_blur;
+        }
+    }
+    &_success {
+        border-color: $green;
+
+        .message_top {
+            background-color: $green;
+        }
+    }
+
+    &_error {
+        border-color: $red;
+
+        .message_top {
+            background-color: $red;
+        }
+    }
+
+    &_warning {
+        border-color: #fffbe6;
+
+        .message_top {
+            background-color: #fffbe6;
+        }
+    }
+
+    &_enter {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    &_enterActive {
+        opacity: 1;
+        transform: translateX(0);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &_exit {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    &_exitActive {
+        opacity: 0;
+        transform: translateX(20%);
+        transition: all 0.3s ease-in-out;
+    }
+}

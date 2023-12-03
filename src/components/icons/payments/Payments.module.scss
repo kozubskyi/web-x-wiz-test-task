@@ -1,0 +1,104 @@
+@import "constants/constans.scss";
+
+.mastercard {
+    &_orange {
+        color: #ff5f00;
+
+        [data-theme="dark"] & {
+            color: $mainColor;
+        }
+    }
+
+    &_red {
+        color: #eb001b;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_yellow {
+        color: #f79e1b;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+}
+
+.paypal {
+    &_blue {
+        color: #27346a;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+
+        &_light {
+            color: #1f264f;
+
+            [data-theme="dark"] & {
+                color: $mainColor;
+            }
+        }
+    }
+}
+
+.googlepay {
+    &_text {
+        color: $mainColor;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+    &_blue {
+        color: #4285f4;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_green {
+        color: #34a853;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_yellow {
+        color: #fbbc04;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_red {
+        color: #ea4335;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+}
+
+.visa {
+    &_blue {
+        color: #222357;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+
+        &_light {
+            color: #254aa5;
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+    }
+}

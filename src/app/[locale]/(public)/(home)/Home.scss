@@ -1,0 +1,46 @@
+@import "constants/constans.scss";
+
+html:not(.header-active) {
+    .home-header {
+        position: absolute;
+        top: 0;
+        background-color: transparent;
+        box-shadow: none;
+        backdrop-filter: none;
+
+        .Header_header_boxIcon__QqCdj {
+            border-color: $white;
+            color: $white;
+
+            [data-theme="dark"] & {
+                color: $dark;
+                border: none;
+                background: $grey;
+            }
+        }
+
+        .Header_header_boxIcon_active__zfGwC {
+            background: $white;
+            color: $accent;
+        }
+
+        .Lang_lang_value__YCJrK {
+            color: $white;
+            border-color: $white;
+            & span {
+                background: transparent;
+                -webkit-text-fill-color: initial;
+            }
+
+            [data-theme="dark"] & {
+                color: $dark;
+                border: none;
+                background: $grey;
+
+                & span {
+                    -webkit-text-fill-color: initial;
+                }
+            }
+        }
+    }
+}

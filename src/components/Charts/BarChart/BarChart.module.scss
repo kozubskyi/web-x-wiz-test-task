@@ -1,0 +1,11 @@
+@import "constants/constans.scss";
+
+.chart {
+    padding: toRem(8) toRem(12);
+    border-radius: toRem(16);
+    background-color: $grey;
+
+    [data-theme="dark"] & {
+        background-color: $grey_misty_12;
+    }
+}

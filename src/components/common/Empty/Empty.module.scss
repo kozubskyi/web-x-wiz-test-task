@@ -1,0 +1,34 @@
+@import "constants/constans.scss";
+
+.empty {
+    @include flexRow(center, center);
+    width: 100%;
+    height: 100%;
+
+    &_content {
+        width: 100%;
+        text-align: center;
+    }
+
+    &_block {
+        max-width: toRem(323);
+        margin: toRem(24) auto 0;
+    }
+
+    &_title {
+        font-size: toRem(20);
+        color: $dark;
+        font-weight: 600;
+    }
+
+    &_subtitle {
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+        margin-top: toRem(4);
+    }
+
+    .empty_button {
+        margin: toRem(24) auto 0;
+        min-width: auto;
+    }
+}

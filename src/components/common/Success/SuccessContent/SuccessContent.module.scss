@@ -1,0 +1,40 @@
+@import "constants/constans.scss";
+
+.success {
+    max-width: toRem(560);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    &_title {
+        display: block;
+        margin-top: toRem(24);
+        font-size: toRem(68);
+        font-weight: 600;
+        color: $dark;
+        line-height: 111.764706%; /* 76/68 */
+    }
+
+    &_subtitle {
+        margin-top: toRem(12);
+        font-size: toRem(20);
+        font-weight: 600;
+        color: $mainColor;
+
+        & > a {
+            margin-left: toRem(5);
+            color: $accent;
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &_btn {
+        margin-top: toRem(32);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

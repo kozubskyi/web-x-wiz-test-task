@@ -1,0 +1,129 @@
+@import "constants/constans.scss";
+
+.main {
+    & &_container {
+        @include flexRow(center, space-between);
+    }
+
+    &_content {
+        max-width: toRem(536);
+        width: 100%;
+
+        & > h1 > span {
+            [data-theme="dark"] & {
+                @include color-accent();
+                
+            }
+        }
+    }
+
+    &_button {
+        margin-top: toRem(24);
+    }
+
+    &_block {
+        position: relative;
+        max-width: toRem(596);
+
+        & img {
+            position: relative;
+
+            object-fit: cover;
+            object-position: top left;
+
+            @include adaptiveValue("width", 896, 596, 2100, 1440, 1);
+            @include adaptiveValue("height", 1060, 760, 2100, 1440, 1);
+            @include adaptiveValue("left", 90, 60, 2100, 1440, 1);
+        }
+    }
+
+    &_cards {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background-color: $white;
+        border-radius: toRem(20);
+
+        transform: translateY(toRem(-72));
+        z-index: 1;
+    }
+
+    .card {
+        @include flexColumn(center, flex-start);
+        text-align: center;
+        column-gap: toRem(24);
+        padding: toRem(24);
+
+        &:not(:last-child) {
+            border-right: toRem(1) solid $grey_pale;
+        }
+
+        &_title {
+            margin-top: toRem(16);
+            font-size: toRem(20);
+            color: $dark;
+            font-weight: 600;
+        }
+    }
+}
+
+.socials {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+                    @include flexRow(center, center);
+    width: fit-content;
+    height: 100%;
+
+    &_list {
+        @include flexColumn(center, flex-start);
+        row-gap: toRem(24);
+
+        padding: toRem(16) toRem(12);
+        border-radius: toRem(50);
+        background-color: #ffffff29;
+    }
+
+    &_item {
+        &:not(:last-child) {
+            padding-bottom: toRem(24);
+            border-bottom: toRem(1) solid #ffffff7a;
+        }
+    }
+
+    &_link {
+        @include flexRow(center, center);
+
+        color: $white;
+
+        transition: color $transition;
+
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+
+    &_line {
+        @include flexRow();
+        margin: toRem(96) 0;
+        position: absolute;
+        height: calc(50% - 13.5rem);
+        width: toRem(1);
+        background-color: #ffffff7a;
+
+        &_top {
+            top: 0;
+        }
+
+        &_bottom {
+            bottom: 0;
+        }
+    }
+}

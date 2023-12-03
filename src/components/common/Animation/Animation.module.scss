@@ -1,0 +1,40 @@
+@import "constants/constans.scss";
+
+.animation {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    &_center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &_slide {
+        position: absolute;
+        top: toRem(4);
+        bottom: toRem(4);
+        left: 0;
+        right: 0;
+
+        @include background-accent();
+        border-radius: $radius;
+
+        z-index: 20;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, transparent, rgba($accent, 0.05));
+
+            &:global {
+                animation: slideRight 2s linear infinite;
+            }
+        }
+    }
+}

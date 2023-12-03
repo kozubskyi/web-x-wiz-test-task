@@ -1,0 +1,209 @@
+@import "constants/constans.scss";
+
+.header {
+    position: relative;
+    width: 100%;
+    background: #ffffffcc;
+    padding: toRem(24) 0;
+    box-shadow: $box_shadow;
+    z-index: 50;
+    backdrop-filter: $bg_blur;
+
+    transition: all $transition, padding-right 0s, backdrop-filter 0s;
+
+    [data-theme="dark"] & {
+        background: $transparent_color;
+    }
+
+    &.header_active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #ffffffcc;
+        box-shadow: $box_shadow;
+
+        &:global {
+            animation: slideIn 1s ease forwards;
+        }
+
+        [data-theme="dark"] & {
+            background: $transparent_color;
+        }
+    }
+
+    .header_container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: toRem(200) max-content 1fr;
+        column-gap: toRem(24);
+    }
+
+    .header_list {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(48);
+    }
+
+    .header_link {
+        position: relative;
+
+        color: $dark;
+        font-weight: 600;
+        font-size: toRem(14);
+
+        transition: color $transition;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+
+            width: 0;
+            height: toRem(1);
+
+            background-color: $accent_light;
+
+            transition: width $transition;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $accent_light;
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .header_actions {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(24);
+
+        justify-self: flex-end;
+    }
+
+    .header_boxIcon {
+        @include flexRow(center, center);
+
+        width: toRem(48);
+        height: toRem(48);
+
+        color: $accent;
+        border: toRem(1) solid $accent;
+        border-radius: toRem(50);
+
+        overflow: hidden;
+        cursor: pointer;
+        transition: all $transition;
+
+        html[data-theme="dark"] & {
+            color: $dark;
+            border-color: transparent;
+            background: $grey;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+
+    .header_avatar {
+        cursor: pointer;
+        transition: filter $transition;
+    
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
+
+    .header_boxIcon_active {
+        @include background-accent();
+        border: none;
+        color: $white;
+        text-transform: uppercase;
+    }
+
+    .dropdown {
+        position: relative;
+
+        &_container {
+            @media screen and (max-width: em(1650)) {
+                left: auto;
+                transform: translate(0);
+                right: 0;
+            }
+        }
+
+        &_box {
+            &:not(:first-child) {
+                margin-top: toRem(16);
+            }
+        }
+
+        &_title {
+            font-weight: 600;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+        }
+
+        &_list {
+            margin-top: toRem(4);
+            border-radius: toRem(16);
+            overflow: hidden;
+
+            & > li {
+                &:not(:last-child) {
+                    border-bottom: toRem(1) solid $grey_pale;
+                }
+            }
+
+            & > li > .dropdown_btn {
+                padding: toRem(12) toRem(24);
+                transition: color $transition;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        color: $accent;
+
+                        [data-theme="dark"] & {
+                            color: $mainColor;
+                            background-color: $grey;
+                            backdrop-filter: $bg_blur;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_btn {
+            @include flexRow(center, flex-start);
+            width: 100%;
+            text-align: left;
+            column-gap: toRem(12);
+            color: $dark;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            font-weight: 600;
+            padding: toRem(8) toRem(24);
+            background-color: $white;
+
+            [data-theme="dark"] & {
+                background-color: $grey;
+                backdrop-filter: $bg_blur;
+            }
+
+            & svg {
+                flex: 0 0 toRem(24);
+            }
+
+            & > span {
+                flex: 1 1 auto;
+            }
+        }
+    }
+}

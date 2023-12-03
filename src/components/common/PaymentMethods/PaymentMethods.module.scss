@@ -1,0 +1,61 @@
+@import "constants/constans.scss";
+
+.methods {
+    &_top {
+        padding: toRem(24);
+    }
+
+    &_list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: toRem(24);
+        padding: 0 toRem(24) toRem(24);
+    }
+}
+
+.method {
+    @include flexRow(center, space-between);
+    column-gap: toRem(24);
+    background-color: $grey;
+    border-radius: toRem(16);
+    padding: toRem(16);
+
+    [data-theme="dark"] & {
+        background-color: rgb($grey_misty, 0.24);
+    }
+
+    &:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    &_box {
+        @include flexRow(flex-start);
+        column-gap: toRem(8);
+    }
+
+    &_image {
+        @include flexRow(center, center);
+        width: toRem(48);
+        height: toRem(48);
+        flex: 0 0 toRem(48);
+        border-radius: 50%;
+        background-color: #fff;
+
+        [data-theme="dark"] & {
+            background-color: $grey;
+            border: toRem(1) solid $grey_pale;
+        }
+    }
+
+    &_name {
+        color: $dark;
+    }
+
+    &_description {
+        margin-top: toRem(4);
+    }
+
+    .method_button {
+        min-width: auto;
+    }
+}

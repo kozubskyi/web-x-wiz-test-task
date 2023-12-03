@@ -1,0 +1,159 @@
+@import "constants/constans.scss";
+
+.fieldBox {
+    margin-top: toRem(16);
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &_label {
+        font-weight: 600;
+        color: $dark;
+    }
+
+    &_wrapper {
+        position: relative;
+        @include flexRow(center, flex-start);
+        border: toRem(1) solid $grey_pale;
+        border-radius: $radius;
+        height: toRem(48);
+        margin-top: toRem(8);
+        overflow: hidden;
+
+        &_password {
+            .fieldBox_input {
+                padding-right: toRem(48);
+            }
+        }
+
+        &.noicon {
+            overflow: visible;
+
+            & input {
+                border-radius: $radius;
+
+                &:focus {
+                    outline: toRem(1) solid $accent_light;
+                }
+            }
+        }
+
+        [data-theme="dark"] & {
+            background-color: $grey_misty_36;
+            border-color: transparent;
+        }
+    }
+
+    &_icon {
+        @include flexRow(center, center);
+
+        width: toRem(48);
+        flex: 0 0 toRem(48);
+        height: 100%;
+        padding-left: toRem(3);
+
+        color: $mainColor;
+        border-right: toRem(1) solid $grey_pale;
+        & svg {
+            width: toRem(24);
+            height: toRem(24);
+        }
+    }
+
+    &_input {
+        padding: 0 toRem(12);
+        border: none;
+        border-radius: 0;
+        color: $dark;
+        font-weight: 600;
+        flex: 1 1 auto;
+        height: 100%;
+        outline: none;
+        background-color: transparent;
+
+        &:focus {
+            outline: none;
+        }
+
+        [data-theme="dark"] & {
+            background-color: transparent;
+        }
+    }
+
+    &_show {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @include flexRow(center, center);
+        background-color: transparent;
+
+        width: toRem(48);
+        height: 100%;
+
+        &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            left: 50%;
+            top: 50%;
+
+            width: 0;
+            height: toRem(1);
+            background-color: currentColor;
+            transform: translateY(-50%) translateX(-50%) rotate(-45deg);
+
+            transition: all $transition;
+            z-index: 1;
+        }
+        &_active {
+            &::before {
+                width: calc(100% - toRem(20));
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $dark;
+            }
+        }
+
+        & svg {
+            transition: color $transition;
+        }
+    }
+
+    &_message {
+        display: none;
+    }
+
+    // on errors
+    &_invalid {
+        .fieldBox_wrapper {
+            border-color: $red;
+
+            & input:focus {
+                outline: none;
+            }
+        }
+        .fieldBox_icon {
+            border-color: $red;
+            color: $red;
+        }
+
+        .fieldBox_show,
+        .fieldBox_input,
+        .fieldBox_input::placeholder {
+            color: $red;
+        }
+
+        .fieldBox_message {
+            display: block;
+            margin-top: toRem(8);
+            color: $red;
+            font-size: toRem(14);
+            font-weight: 400;
+        }
+    }
+}

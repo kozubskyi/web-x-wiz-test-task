@@ -1,0 +1,161 @@
+@import "constants/constans.scss";
+
+.chat {
+    .seller {
+        @include flexRow(center, space-between);
+        column-gap: toRem(24);
+        padding: toRem(16) toRem(24);
+        background-color: $grey;
+
+        [data-theme="dark"] & {
+            background-color: $blue_pale;
+        }
+
+        &_block {
+            @include flexRow(center, flex-start);
+            column-gap: toRem(24);
+        }
+
+        &_image {
+            & img {
+                border-radius: 50%;
+            }
+        }
+
+        &_status {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            color: $green;
+            margin-top: toRem(4);
+        }
+
+        &_report {
+            @include flexRow(center, center);
+            width: toRem(48);
+            height: toRem(48);
+            background-color: transparent;
+            border-radius: 50%;
+
+            transition: background-color $transition;
+
+            & svg {
+                transition: color $transition;
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    background-color: $grey_pale;
+                    color: $dark;
+                }
+            }
+        }
+    }
+
+    .chat_wrapper {
+        margin: 0;
+        &::-webkit-scrollbar {
+            width: toRem(3);
+            height: toRem(3);
+
+            &-thumb {
+                border: none;
+                border-radius: $radius;
+            }
+
+            &-button:single-button {
+                display: none;
+            }
+        }
+    }
+
+    .chat_body {
+        padding: toRem(24);
+    }
+
+    .product {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(24);
+        padding: toRem(16);
+        box-shadow: $box_shadow;
+        border: toRem(1) solid $grey_pale;
+        border-radius: toRem(24);
+
+        [data-theme="dark"] & {
+            background-color: $blue_pale;
+        }
+
+        &_image {
+            & img {
+                border-radius: $radius;
+            }
+        }
+
+        &_relates {
+            display: block;
+            font-size: toRem(12);
+            line-height: 133.333333%; /* 16/12 */
+        }
+
+        &_title {
+            display: inline-block;
+            font-weight: 700;
+            color: $dark;
+            margin-top: toRem(4);
+        }
+    }
+
+    &_messages {
+        margin-top: toRem(24);
+    }
+
+    .chat_footer {
+        padding: toRem(16) toRem(24);
+        background-color: $grey;
+
+        [data-theme="dark"] & {
+            background-color: $blue_pale;
+        }
+    }
+
+    &.secondary {
+        border: none;
+        background-color: transparent;
+
+        .seller {
+            border: none;
+        }
+
+        .chat_footer {
+            border: none;
+        }
+    }
+
+    &_form {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(16);
+    }
+
+    &_input {
+        flex: 1 1 auto;
+
+        & input {
+            border: none;
+            background-color: $white;
+
+            [data-theme="dark"] & {
+                background-color: $grey_misty_36;
+            }
+        }
+    }
+
+    .chat_send {
+        min-width: toRem(117);
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+
+        [data-theme="dark"] & {
+            border: none;
+            background-color: rgb($grey_misty, 0.24);
+        }
+    }
+}

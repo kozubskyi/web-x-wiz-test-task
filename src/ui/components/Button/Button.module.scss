@@ -1,0 +1,77 @@
+@import "constants/constans.scss";
+
+.button {
+    @include flexRow(center, center);
+    column-gap: toRem(12);
+
+    @include background-accent();
+    border-radius: $radius;
+    font-size: toRem(14);
+    line-height: 142.857143%; /* 20/14 */
+    font-weight: 600;
+    color: $white;
+
+    height: toRem(48);
+    width: fit-content;
+    min-width: toRem(138);
+    padding: toRem(14) toRem(24);
+
+    transition: all $transition;
+
+    [data-theme="dark"] & {
+        color: $dark;
+    }
+
+    @media (any-hover: hover) {
+        &:hover {
+            filter: brightness(1.1);
+        }
+    }
+    &_secondary {
+        background: transparent;
+        border: toRem(1) solid $grey_pale;
+        color: $dark_purple;
+
+        [data-theme="dark"] & {
+            background: $grey_misty_36;
+            border-color: transparent;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: $grey_pale;
+                filter: none;
+
+                [data-theme="dark"] & {
+                    background: $grey_misty_12;
+                }
+            }
+        }
+    }
+
+    &_minor {
+        background: $blue_pale;
+        color: $accent;
+
+        [data-theme="dark"] & {
+            background: $grey;
+            border: toRem(1) solid $grey_pale;
+            backdrop-filter: $bg_blur;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: #cfdcf6;
+
+                [data-theme="dark"] & {
+                    background: $grey_misty_12;
+                }
+            }
+        }
+    }
+
+    &_red {
+        background: $red;
+        color: $grey;
+    }
+}

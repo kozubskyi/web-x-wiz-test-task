@@ -1,0 +1,82 @@
+@import "constants/constans.scss";
+
+.rating {
+    margin-top: toRem(24);
+
+    &_top {
+        display: inline-flex;
+        align-items: flex-end;
+        column-gap: toRem(16);
+    }
+
+    &_value {
+        font-size: toRem(68);
+        font-weight: 600;
+        line-height: 111.764706%; /* 76/68 */
+        color: $dark;
+    }
+
+    &_box {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(8);
+    }
+
+    &_review {
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+    }
+
+    &_body {
+        padding: toRem(16);
+        background-color: $grey;
+        border-radius: toRem(20);
+        margin-top: toRem(24);
+
+        [data-theme="dark"] & {
+            background-color: $blue_pale;
+        }
+    }
+
+    &_item {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(16);
+
+        &:not(:first-child) {
+            margin-top: toRem(16);
+        }
+    }
+
+    &_num {
+        [data-theme="dark"] & {
+            color: $dark;
+        }
+    }
+
+    &_line {
+        position: relative;
+        flex: 1 1 auto;
+        width: 100%;
+        height: toRem(16);
+        border-radius: toRem(20);
+        background-color: $grey_lavander;
+        overflow: hidden;
+
+        & span {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            background-color: $green;
+        }
+    }
+
+    &_prc {
+        color: $dark;
+    }
+
+    &_item_review {
+        text-align: right;
+        color: $dark;
+        min-width: toRem(24);
+    }
+}

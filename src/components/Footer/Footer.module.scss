@@ -1,0 +1,202 @@
+@import "constants/constans.scss";
+
+.footer {
+    padding: toRem(60) 0;
+    margin-top: toRem(160);
+    background-color: $grey;
+
+    &_description {
+        margin-top: toRem(24);
+
+        color: $dark;
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+    }
+
+    &_socials {
+        margin-top: toRem(24);
+
+        @include flexRow(center, flex-start);
+        column-gap: toRem(16);
+    }
+
+    &_social {
+        @include flexRow(center, center);
+        width: toRem(48);
+        height: toRem(48);
+
+        border: toRem(1) solid $dark;
+        color: $dark;
+        border-radius: 50%;
+        transition: border $transition, color $transition;
+
+        @media (any-hover: hover) {
+            &:hover {
+                border-color: $accent;
+                color: $accent;
+
+                [data-theme="dark"] & {
+                    border-color: $mainColor;
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+
+    &_columns {
+        display: grid;
+        grid-template-columns: toRem(312) repeat(4, 1fr);
+        column-gap: toRem(48);
+    }
+
+    .column {
+        &_title {
+            color: $accent;
+            font-size: toRem(24);
+            line-height: 133.333333%; /* 32/24 */
+            font-weight: 600;
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+
+        &_items {
+            margin-top: toRem(16);
+        }
+
+        &_item {
+            padding: toRem(14) 0;
+        }
+
+        &_link {
+            color: $dark;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            font-weight: 600;
+
+            [data-theme="dark"] & {
+                color: $mainColor;
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    color: $accent;
+                    text-decoration: underline;
+
+                    [data-theme="dark"] & {
+                        color: $dark;
+                    }
+                }
+            }
+
+            &.icon {
+                display: inline-flex;
+                align-items: center;
+                column-gap: toRem(12);
+
+                transition: color $transition;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                & i {
+                    @include flexRow(center, center);
+                    flex: 0 0 toRem(24);
+                }
+            }
+        }
+    }
+
+    .payments {
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            gap: toRem(16) toRem(24);
+            margin-top: toRem(20);
+
+            & > li {
+                &:last-child {
+                    grid-column: span 3;
+                }
+            }
+        }
+
+        .payment {
+            &_button {
+                display: inline-block;
+                color: $dark;
+                transition: opacity $transition;
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+
+    &_bottom {
+        margin-top: toRem(24);
+
+        & &_container {
+            @include flexRow(center, space-between);
+            column-gap: toRem(24);
+            padding-top: toRem(36);
+            border-top: toRem(1) solid $grey_light_pale;
+            [data-theme="dark"] & {
+                border-top: toRem(1) solid $grey_light;
+            }
+        }
+    }
+
+    &_webXwiz {
+        & > p {
+            color: $dark;
+            line-height: 137.5%; /* 22/16 */
+
+            [data-theme="dark"] & {
+                color: $mainColor;
+            }
+
+            & > a {
+                margin-left: toRem(5);
+                font-weight: 700;
+
+                [data-theme="dark"] & {
+                    color: $dark;
+                }
+
+                @media (any-hover: hover) {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &_policy {
+        & a {
+            color: $dark;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            font-weight: 600;
+
+            &:not(:first-child) {
+                margin-left: toRem(16);
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

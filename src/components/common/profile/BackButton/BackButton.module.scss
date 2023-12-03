@@ -1,0 +1,8 @@
+@import "constants/constans.scss";
+
+button.back {
+    min-width: auto;
+    width: toRem(48);
+    padding: 0;
+    color: $mainColor;
+}

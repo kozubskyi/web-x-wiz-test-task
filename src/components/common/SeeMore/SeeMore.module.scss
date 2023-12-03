@@ -1,0 +1,38 @@
+@import "constants/constans.scss";
+
+.more {
+    &_btn {
+        @include flexRow(center, center);
+        width: fit-content;
+        margin: 0 auto;
+        column-gap: toRem(12);
+        padding: toRem(14);
+        height: toRem(48);
+        min-width: toRem(140);
+
+        color: $accent;
+        font-weight: 600;
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+
+        transition: filter $transition, color $transition;
+
+        [data-theme="dark"] & {
+            color: $dark;
+
+            & span {
+                -webkit-text-fill-color: initial;
+            }
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(0.8);
+
+                [data-theme="dark"] & {
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}

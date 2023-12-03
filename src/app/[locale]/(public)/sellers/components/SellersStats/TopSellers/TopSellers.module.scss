@@ -1,0 +1,122 @@
+@import 'constants/constans.scss';
+
+.top_sellers {
+  .top_sellers_header {
+    margin: toRem(24) 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+      font-size: toRem(20);
+    }
+
+    & .filter {
+      border-radius: $fontSize;
+      border: 1px solid $grey_pale;
+      display: flex;
+
+      button {
+        border: toRem(1) solid transparent;
+        border-radius: inherit;
+        padding: toRem(12) toRem(24);
+        font-size: toRem(14);
+        font-weight: 600;
+        color: $accent;
+
+        &.active {
+          background-color: $blue_pale;
+        }
+
+        [data-theme='dark'] & {
+          color: $dark;
+
+          &.active {
+            color: $dark;
+            background-color: rgba(0, 0, 0, 0.24);
+            border: toRem(1) solid $grey_pale;
+            // box-shadow:
+            //   -0.5px 0 1px $dark,
+            //   0.5px 0 1px $grey_pale;
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: toRem(24);
+
+    li {
+      background-color: $grey;
+      padding: $fontSize;
+      border-radius: $fontSize;
+      overflow: hidden;
+
+      .card_image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: calc(toRem(80) + toRem(18));
+
+        img {
+          border-radius: 50%;
+        }
+
+        .primary,
+        .secondary {
+          width: toRem(36);
+          height: toRem(36);
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: $dark;
+          border: toRem(2) solid $white;
+
+          [data-theme='dark'] & {
+            border: toRem(2) solid $grey_lavander;
+          }
+        }
+
+        .primary {
+          background-color: $gold;
+        }
+
+        .secondary {
+          background-color: $grey_pale;
+
+          [data-theme='dark'] & {
+            background-color: $white;
+          }
+        }
+      }
+
+      .card_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h4 {
+          font-size: $fontSize;
+          font-weight: bold;
+          padding: $fontSize 0 toRem(12);
+          text-align: center;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+
+          &.gold svg {
+            color: $gold;
+          }
+        }
+      }
+    }
+  }
+}

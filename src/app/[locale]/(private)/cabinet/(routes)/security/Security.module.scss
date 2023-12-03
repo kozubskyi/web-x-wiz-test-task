@@ -1,0 +1,88 @@
+@import "constants/constans.scss";
+
+.form {
+    &_fields {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: toRem(24);
+    }
+
+    .form_field {
+        margin: 0;
+    }
+
+    &_footer {
+        margin-top: toRem(24);
+    }
+
+    .form_submit {
+        margin-left: auto;
+    }
+}
+
+.twofa {
+    @include flexRow(center, space-between);
+    column-gap: toRem(24);
+    margin-top: toRem(24);
+    padding-top: toRem(24);
+    border-top: toRem(1) solid $grey_pale;
+
+    &_title {
+        color: $dark;
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+        font-weight: 700;
+    }
+
+    &_subtitle {
+        margin-top: toRem(4);
+        font-size: toRem(14);
+        line-height: 142.857143%; /* 20/14 */
+    }
+}
+
+.modal {
+    &_body {
+        margin-top: toRem(16);
+    }
+
+    &_text {
+        font-weight: 600;
+    }
+
+    &_qrcode {
+        margin-top: toRem(16);
+        text-align: center;
+    }
+
+    &_inputBoxes {
+        margin-top: toRem(16);
+    }
+
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: toRem(16);
+
+        & > button {
+            width: 100%;
+        }
+    }
+
+    &_success {
+        margin-top: toRem(48);
+
+        & span {
+            font-size: toRem(24);
+            line-height: 133.333333%; /* 32/24 */
+        }
+
+        & p {
+            font-size: toRem(16);
+        }
+    }
+
+    .modal_next {
+        margin-left: auto;
+    }
+}

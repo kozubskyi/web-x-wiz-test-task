@@ -1,0 +1,17 @@
+@import "constants/constans.scss";
+
+.logo {
+    @include flexRow(center, flex-start);
+    width: fit-content;
+    column-gap: toRem(16);
+
+    .logo_image {
+        display: inline-block;
+        transition: filter $transition;
+        @media (any-hover: hover) {
+            &:hover {
+                filter: brightness(0.9);
+            }
+        }
+    }
+}

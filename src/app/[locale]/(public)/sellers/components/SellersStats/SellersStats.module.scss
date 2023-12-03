@@ -1,0 +1,342 @@
+@import 'constants/constans.scss';
+
+.stats {
+  border: toRem(1) solid $grey_pale;
+  border-radius: toRem(24);
+  margin-left: toRem(24);
+  width: calc(100% - toRem(336));
+  backdrop-filter: $bg_blur;
+  background-color: $white;
+  overflow: hidden;
+
+  [data-theme='dark'] & {
+    background-color: $transparent_color;
+  }
+
+  &_header {
+    padding: toRem(24);
+
+    h2 {
+      font-size: toRem(24);
+      padding-bottom: toRem(24);
+      border-bottom: 1px solid $grey_pale;
+    }
+
+    .top_sellers {
+      .top_sellers_header {
+        margin: toRem(24) 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+          font-size: toRem(20);
+        }
+
+        & .filter {
+          border-radius: $fontSize;
+          border: 1px solid $grey_pale;
+          display: flex;
+
+          button {
+            border: toRem(1) solid transparent;
+            border-radius: inherit;
+            padding: toRem(12) toRem(24);
+            font-size: toRem(14);
+            font-weight: 600;
+            color: $accent;
+
+            &.active {
+              background-color: $blue_pale;
+            }
+
+            [data-theme='dark'] & {
+              color: $dark;
+
+              &.active {
+                color: $dark;
+                background-color: rgba(0, 0, 0, 0.24);
+                border: toRem(1) solid $grey_pale;
+                // box-shadow:
+                //   -0.5px 0 1px $dark,
+                //   0.5px 0 1px $grey_pale;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: toRem(24);
+
+        li {
+          background-color: $grey;
+          padding: $fontSize;
+          border-radius: $fontSize;
+          overflow: hidden;
+
+          .card_image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            height: calc(toRem(80) + toRem(18));
+
+            img {
+              border-radius: 50%;
+            }
+
+            .primary,
+            .secondary {
+              width: toRem(36);
+              height: toRem(36);
+              border-radius: 50%;
+              position: absolute;
+              bottom: 0;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: $dark;
+              border: toRem(2) solid $white;
+
+              [data-theme='dark'] & {
+                border: toRem(2) solid $grey_lavander;
+              }
+            }
+
+            .primary {
+              background-color: $gold;
+            }
+
+            .secondary {
+              background-color: $grey_pale;
+
+              [data-theme='dark'] & {
+                background-color: $white;
+              }
+            }
+          }
+
+          .card_body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h4 {
+              font-size: $fontSize;
+              font-weight: bold;
+              padding: $fontSize 0 toRem(12);
+              text-align: center;
+            }
+
+            span {
+              display: flex;
+              align-items: center;
+
+              &.gold svg {
+                color: $gold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .filters {
+    display: flex;
+    align-items: flex-end;
+    margin: 0 toRem(24) toRem(24) toRem(24);
+    font-weight: 600;
+    color: $dark;
+
+    & > *:not(:last-child) {
+      margin-right: toRem(24);
+    }
+
+    .search {
+      width: 35%;
+    }
+
+    .signup_date {
+      width: 55%;
+    }
+
+    input {
+      margin-top: toRem(8);
+      font-weight: 400;
+    }
+
+    .date_inputs {
+      display: flex;
+
+      input:first-child {
+        margin-right: toRem(24);
+      }
+    }
+
+    button[type='submit'] {
+      min-width: toRem(48);
+      min-height: toRem(48);
+      background-color: $blue_pale;
+      color: $accent;
+      border-radius: $radius;
+
+      [data-theme='dark'] & {
+        color: $dark;
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: $dark;
+
+    th {
+      background-color: $grey;
+      padding: $fontSize 0;
+      text-align: left;
+
+      button {
+        display: inline-flex;
+
+        svg {
+          margin-left: toRem(4);
+        }
+      }
+    }
+
+    tbody {
+      .loading {
+        padding: toRem(24);
+      }
+
+      tr {
+        border-top: toRem(1) solid $grey_pale;
+        border-bottom: toRem(1) solid $grey_pale;
+      }
+
+      td {
+        padding: toRem(12) 0;
+      }
+
+      .banned,
+      .not_banned {
+        width: toRem(20);
+        height: toRem(20);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .banned {
+        border: toRem(1) solid transparent;
+        background-color: $red;
+        color: white;
+      }
+
+      .not_banned {
+        border: toRem(1) solid $dark;
+      }
+
+      .link {
+        width: toRem(84);
+        text-align: center;
+
+        svg {
+          vertical-align: text-bottom;
+        }
+      }
+    }
+
+    .checkbox {
+      text-align: center;
+      width: calc(toRem(24) * 3);
+
+      input[type='checkbox'] {
+        width: toRem(18);
+        height: toRem(18);
+        vertical-align: middle;
+      }
+    }
+
+    .user_name {
+      display: flex;
+
+      .image {
+        width: toRem(48);
+        height: toRem(48);
+        border-radius: 50%;
+        margin-right: toRem(8);
+        background-color: $grey;
+        font-size: toRem(24);
+        color: $dark;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h5 {
+        font-size: $fontSize;
+        font-weight: 500;
+      }
+
+      span {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .pagination {
+    padding: toRem(24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+
+      li {
+        margin-left: $fontSize;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: toRem(48);
+          height: toRem(48);
+          border-radius: $radius;
+          font-size: toRem(14);
+          font-weight: 600;
+          color: $accent;
+          cursor: pointer;
+
+          [data-theme='dark'] & {
+            color: $dark;
+          }
+
+          &:hover {
+            background-color: $blue_pale;
+          }
+
+          &[aria-current='page'] {
+            background-color: $blue_pale;
+            cursor: auto;
+          }
+
+          &[aria-disabled='true'] {
+            cursor: auto;
+
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}

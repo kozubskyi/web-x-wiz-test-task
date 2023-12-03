@@ -1,0 +1,133 @@
+@import "constants/constans.scss";
+
+.rating {
+    .rating_container {
+        position: relative;
+    }
+
+    .rating_bg {
+        & img {
+            filter: invert(1) brightness(2);
+        }
+    }
+
+    &_content {
+        position: relative;
+        padding: toRem(48);
+        @include background-accent();
+        border-radius: toRem(20);
+        z-index: 1;
+
+        [data-theme="dark"] & {
+            background: $grey;
+        }
+    }
+
+    &_top {
+        position: relative;
+        max-width: toRem(424);
+        text-align: center;
+        margin: 0 auto;
+        z-index: 1;
+
+        & h2,
+        & p {
+            color: $white;
+
+            [data-theme="dark"] & {
+                color: $dark;
+            }
+        }
+    }
+
+    .swiper {
+        width: 100%;
+        &_button {
+            position: absolute;
+            top: 50%;
+            min-width: auto;
+            width: toRem(48);
+            height: toRem(48);
+            z-index: 1;
+
+            &::after {
+                font-size: toRem(16);
+            }
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+        &_prev {
+            left: 0;
+            transform: translate(-50%, -50%);
+            & img {
+                transform: scale(-1, 1);
+            }
+        }
+        &_next {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+    &_comments {
+        position: relative;
+        margin-top: toRem(48);
+        z-index: 1;
+
+        .comment {
+            padding: toRem(24);
+            background-color: $white;
+            box-shadow: $box_shadow;
+            border-radius: toRem(16);
+
+            &_top {
+                @include flexRow(center, flex-start);
+                column-gap: toRem(12);
+            }
+
+            &_avatar {
+                border-radius: $radius;
+                overflow: hidden;
+            }
+
+            &_name {
+                display: block;
+                font-weight: 600;
+                font-size: toRem(14);
+                color: $dark;
+                line-height: 142.857143%; /* 20/14 */
+            }
+
+            &_date {
+                display: block;
+                margin-top: toRem(8);
+                font-size: toRem(12);
+                line-height: 133.333333%; /* 16/12 */
+            }
+
+            &_body {
+                margin-top: toRem(16);
+                color: $dark;
+                line-height: 137.5%; /* 22/16 */
+            }
+
+            &_footer {
+                @include flexRow(center, space-between);
+                column-gap: toRem(12);
+                margin-top: toRem(16);
+                padding-top: toRem(16);
+                border-top: toRem(1) solid $grey_pale;
+            }
+
+            &_posted {
+                font-weight: 600;
+                font-size: toRem(12);
+                line-height: 133.333333%; /* 16/12 */
+
+                & span {
+                    color: $dark;
+                }
+            }
+        }
+    }
+}

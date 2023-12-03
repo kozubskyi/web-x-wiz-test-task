@@ -1,0 +1,13 @@
+@import "constants/constans.scss";
+
+.explanation{
+    &_top{
+        max-width: toRem(424);
+        text-align: center;
+        margin: 0 auto;
+    }
+    &_image{
+        margin-top: toRem(28);
+        text-align: center;
+    }
+}

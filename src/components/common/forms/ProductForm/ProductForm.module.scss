@@ -1,0 +1,30 @@
+@import "constants/constans.scss";
+
+.form {
+    &_fields {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr); // П'ять колонок
+        gap: toRem(24);
+
+        & > div {
+            grid-column: span 2; 
+
+            &:nth-child(5n + 1),
+            &:nth-child(5n + 2) {
+                grid-column: span 3;
+            }
+
+        }
+    }
+
+    .form_fieldbox {
+        margin-top: 0;
+    }
+
+    &_label {
+        display: inline-block;
+        padding-bottom: toRem(8);
+        font-weight: 600;
+        color: $dark;
+    }
+}

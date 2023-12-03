@@ -1,0 +1,19 @@
+@import "constants/constans.scss";
+
+.list {
+    @include flexColumn();
+    row-gap: toRem(16);
+    margin-top: toRem(24);
+
+    .item {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(12);
+
+        &_title {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            color: $dark_purple;
+            font-weight: 600;
+        }
+    }
+}

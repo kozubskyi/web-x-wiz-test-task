@@ -1,0 +1,29 @@
+@import "constants/constans.scss";
+
+.player {
+    .player_container {
+        @include flexRow(center, space-between);
+    }
+
+    .player_content {
+        max-width: toRem(536);
+    }
+
+    .player_children {
+        margin-top: toRem(24);
+    }
+
+    .player_block {
+        height: toRem(316);
+        width: toRem(520);
+        border-radius: $radius;
+        overflow: hidden;
+        background-color: $grey;
+    }
+
+    &_mirror {
+        .player_container {
+            flex-direction: row-reverse;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+@import "constants/constans.scss";
+
+.selling {
+    &_top {
+        @include flexRow(center, space-between);
+        column-gap: toRem(24);
+    }
+
+    &_all {
+        & svg {
+            transition: transform $transition;
+        }
+        @media (any-hover: hover) {
+            &:hover svg {
+                transform: translateX(toRem(5));
+            }
+        }
+    }
+
+    &_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: toRem(24);
+        gap: toRem(24);
+    }
+
+    .card {
+        border: toRem(1) solid $grey_pale;
+        border-radius: toRem(20);
+        text-align: center;
+        box-shadow: $box_shadow;
+
+        &_top {
+            padding: toRem(24) toRem(24) 0;
+            height: toRem(126);
+        }
+
+        &_body {
+            padding: toRem(24);
+
+            & span {
+                display: block;
+            }
+        }
+
+        &_title {
+            font-weight: 600;
+            font-size: toRem(20);
+            line-height: 140%; /* 28/20 */
+            color: $dark_purple;
+        }
+
+        &_footer {
+            padding: 0 toRem(24) toRem(24);
+        }
+
+        &_see {
+            width: 100%;
+        }
+    }
+}
+
+.explanation{
+    &_top{
+        max-width: toRem(424);
+        text-align: center;
+        margin: 0 auto;
+    }
+    &_image{
+        margin-top: toRem(28);
+        text-align: center;
+    }
+}
+
+.become_list {
+    @include flexRow(center, flex-start);
+    column-gap: toRem(12);
+
+    padding: toRem(24) 0;
+    border-top: toRem(1) solid $grey_pale;
+    border-bottom: toRem(1) solid $grey_pale;
+
+    .item {
+        @include flexRow(center, flex-start);
+
+        &_content {
+            @include flexRow(center, flex-start);
+            column-gap: toRem(12);
+        }
+
+        &_image {
+            @include flexRow(center, center);
+            width: toRem(48);
+            flex: 0 0 toRem(48);
+            height: toRem(48);
+            border-radius: $radius;
+            border: toRem(1) solid $grey_pale;
+            background-color: $white;
+            box-shadow: $box_shadow;
+        }
+
+        &_title {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            font-weight: 600;
+            color: $dark_purple;
+        }
+
+        &_arrow {
+            opacity: 0.4;
+            margin-left: toRem(16);
+        }
+    }
+}
+
+.become {
+    margin-top: toRem(24);
+}
+
+ul.list {
+    margin-top: 0;
+
+    padding: toRem(24) 0;
+    border-top: toRem(1) solid $grey_pale;
+    border-bottom: toRem(1) solid $grey_pale;
+}
+
+.more {
+    margin-top: toRem(24);
+}

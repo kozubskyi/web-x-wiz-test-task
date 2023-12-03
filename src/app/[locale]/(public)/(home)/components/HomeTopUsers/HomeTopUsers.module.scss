@@ -1,0 +1,59 @@
+@import "constants/constans.scss";
+
+.users {
+    & &_container {
+        position: relative;
+
+        border-radius: toRem(20);
+        background: $blue_pale;
+    }
+
+    &_content {
+        padding-top: toRem(48);
+        padding-bottom: toRem(48);
+        position: relative;
+        z-index: 1;
+    }
+    &_top {
+        max-width: toRem(424);
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &_switcher {
+        margin-top: toRem(24);
+        display: inline-flex;
+        align-items: center;
+        column-gap: toRem(4);
+
+        padding: toRem(4);
+        background-color: $grey;
+        border-radius: toRem(30);
+        height: toRem(56);
+
+        & > button {
+            border-radius: toRem(42);
+            color: $dark;
+            font-weight: 600;
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            height: toRem(48);
+            width: toRem(94);
+
+            &.active {
+                background-color: $white;
+            }
+        }
+    }
+
+    &_body {
+        margin-top: toRem(28);
+        text-align: center;
+        max-width: toRem(648);
+        margin: 0 auto;
+    }
+
+    & &_bg {
+        margin: 0 toRem(15);
+    }
+}

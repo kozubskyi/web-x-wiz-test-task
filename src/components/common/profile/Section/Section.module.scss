@@ -1,0 +1,70 @@
+@import "constants/constans.scss";
+
+section.section {
+    padding: toRem(24);
+}
+
+.section {
+    position: relative;
+    height: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $transparent_color;
+        backdrop-filter: $bg_blur;
+        border: toRem(1) solid $grey_pale;
+        border-radius: toRem(24);
+    }
+
+    &_layer {
+        @include flexColumn();
+        position: relative;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &_header {
+        padding-bottom: toRem(24);
+        border-bottom: toRem(1) solid $grey_pale;
+
+        &_flex {
+            @include flexRow(center);
+            column-gap: toRem(16);
+            width: fit-content;
+        }
+    }
+
+    &_body {
+        @include flexColumn();
+        flex: 1 1 auto;
+        padding-top: toRem(24);
+    }
+
+    &_block {
+        margin-top: toRem(24);
+
+        &:first-child {
+            margin-top: 0;
+        }
+        
+        box-shadow: $box_shadow;
+        border-radius: toRem(20);
+
+        [data-theme="dark"] & {
+            background: #1919235c;
+        }
+
+        &_header {
+            padding: toRem(24);
+        }
+
+        &_body {
+            padding: 0 toRem(24) toRem(24);
+        }
+    }
+}

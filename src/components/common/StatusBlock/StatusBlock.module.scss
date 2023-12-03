@@ -1,0 +1,35 @@
+@import "constants/constans.scss";
+
+.status {
+    display: inline-block;
+    min-width: toRem(120);
+    height: toRem(40);
+    padding: toRem(8) toRem(24);
+    border-radius: toRem(50);
+    text-align: center;
+    text-transform: lowercase;
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+
+    &_pending {
+        background-color: #ff6c001a;
+        color: #ff6c00;
+    }
+
+    &_succeeded {
+        background-color: #00a1901a;
+        color: $green;
+    }
+
+    &_canceled {
+        background-color: #dd00551a;
+        color: $red;
+    }
+
+    &_failed {
+        background-color: #dd00551a;
+        color: $red;
+    }
+}

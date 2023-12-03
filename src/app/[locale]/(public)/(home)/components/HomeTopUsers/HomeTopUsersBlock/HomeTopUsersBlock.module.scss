@@ -1,0 +1,90 @@
+@import "constants/constans.scss";
+
+.block {
+   @include flexRow(center, center);
+    column-gap: toRem(24);
+    max-width: toRem(648);
+    margin: toRem(48) auto 0;
+
+    .user {
+        width: toRem(200);
+        @include flexColumn(center, flex-start);
+        text-align: center;
+
+        &:nth-child(2) {
+            order: -1;
+        }
+
+        &:nth-child(3) {
+            order: 1;
+        }
+
+        &_image {
+            position: relative;
+            display: inline-block;
+            border-radius: 50%;
+            // border: toRem(4) solid $white;
+
+            & img {
+                border-radius: 50%;
+            }
+        }
+
+        &_place {
+            @include flexRow(center, center);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%) translateY(40%);
+            border-radius: 50%;
+            background-color: $white;
+            border: toRem(1) solid $accent;
+            color: $accent;
+            font-weight: 600;
+            width: toRem(24);
+            height: toRem(24);
+            line-height: 137.5%; /* 22/16 */
+        }
+
+        &_name {
+            margin-top: toRem(24);
+
+            color: $dark;
+            font-size: toRem(20);
+            font-weight: 600;
+            line-height: 140%; /* 28/20 */
+        }
+
+        &_achive {
+            margin-top: toRem(12);
+            @include flexRow(center, flex-start);
+            column-gap: toRem(4);
+            color: $mainColor;
+        }
+
+        &_first {
+            .user_image {
+                // border: toRem(8) solid $gold;
+            }
+
+            .user_place {
+                width: toRem(48);
+                height: toRem(48);
+
+                color: $white;
+                font-weight: 600;
+                font-size: toRem(28);
+                line-height: 128.571429%; /* 36/28 */
+
+                background-color: $gold;
+                border: toRem(2) solid $white;
+            }
+
+            .user_achive {
+                & svg {
+                    color: $gold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,230 @@
+@import "constants/constans.scss";
+
+.sidebar {
+    position: sticky;
+    top: toRem(120);
+    background-color: $transparent_color;
+    border: toRem(1) solid $grey_pale;
+    border-radius: toRem(24);
+    backdrop-filter: $bg_blur;
+    overflow: hidden;
+
+    &_content {
+        overflow-y: auto;
+
+        @media (max-height: em(999)) {
+            max-height: toRem(564);
+        }
+        @media (max-height: em(899)) {
+            max-height: toRem(464);
+        }
+        @media (max-height: em(799)) {
+            max-height: toRem(364);
+        }
+        @media (max-height: em(699)) {
+            max-height: toRem(264);
+        }
+    }
+
+    [data-theme="dark"] & {
+        background-color: $grey;
+    }
+
+    &_top {
+        padding: toRem(24);
+    }
+
+    .user {
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        align-items: center;
+
+        background-color: $grey;
+        border-radius: toRem(20) $radius $radius toRem(20);
+
+        &_image {
+            position: relative;
+            @include flexRow(center, center);
+            width: toRem(76);
+            height: toRem(76);
+
+            & img {
+                border-radius: toRem(20);
+            }
+
+            & > span {
+                @include flexRow(center, center);
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                font-size: toRem(36);
+                text-transform: uppercase;
+                border-radius: toRem(20);
+                background-color: $grey_pale;
+                color: $dark;
+            }
+        }
+
+        &_level {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%) translateY(50%);
+
+            padding: 0 toRem(8);
+            background-color: #ecf2fe;
+            border-radius: toRem(30);
+            box-shadow: $box_shadow;
+            border: toRem(1) solid #fff;
+
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+
+            [data-theme="dark"] & {
+                & span {
+                    @include color-accent();
+                }
+            }
+        }
+
+        &_info {
+            padding: toRem(12);
+        }
+
+        &_name {
+            display: block;
+            font-weight: 700;
+            color: $dark;
+            text-transform: capitalize;
+        }
+
+        &_email {
+            display: inline-block;
+            margin-top: toRem(4);
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+        }
+
+        &_confident {
+            position: relative;
+            @include flexRow(center);
+            width: 100%;
+            height: toRem(24);
+            padding: toRem(4) toRem(8);
+            border: toRem(1) solid #fff;
+            border-radius: toRem(40);
+            margin-top: toRem(8);
+            overflow: hidden;
+
+            [data-theme="dark"] & {
+                background-color: $grey_lavander;
+                border-color: $grey_lavander;
+            }
+
+            &_value {
+                position: relative;
+                font-size: toRem(10);
+                line-height: 140%; /* 14/10 */
+                font-weight: 600;
+                color: #fff;
+                z-index: 1;
+            }
+
+            &_line {
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background-color: $green;
+                border-radius: 0 toRem(40) toRem(40) 0;
+            }
+        }
+    }
+
+    &_body {
+        padding: toRem(12) toRem(24) toRem(16) toRem(24);
+    }
+
+    &_item {
+        &:not(:first-child) {
+            padding-top: toRem(12);
+        }
+    }
+
+    &_button {
+        @include flexRow(center, flex-start);
+        column-gap: toRem(12);
+        width: 100%;
+
+        border-radius: $radius;
+        border: toRem(1) solid transparent;
+        padding: toRem(12) toRem(24);
+        color: $dark;
+
+        transition: all $transition;
+
+        [data-theme="dark"] & {
+            color: $mainColor;
+        }
+
+        @media (any-hover: hover) {
+            &:hover {
+                color: $accent;
+
+                [data-theme="dark"] & {
+                    color: $dark;
+                }
+            }
+        }
+
+        & span {
+            font-size: toRem(14);
+            line-height: 142.857143%; /* 20/14 */
+            font-weight: 600;
+        }
+
+        &.active {
+            color: $accent;
+            background-color: $blue_pale;
+            pointer-events: none;
+
+            [data-theme="dark"] & {
+                color: $dark;
+                background-color: $grey;
+                border-color: $grey_pale;
+            }
+        }
+
+        &.logout {
+            color: $red;
+
+            [data-theme="dark"] & {
+                color: $mainColor;
+            }
+
+            @media (any-hover: hover) {
+                &:hover {
+                    color: #ee2270;
+
+                    [data-theme="dark"] & {
+                        color: $dark;
+                    }
+                }
+            }
+        }
+    }
+
+    &_footer {
+        padding: toRem(24);
+        border-top: toRem(1) solid $grey_pale;
+
+        & > a {
+            min-width: auto;
+            width: 100%;
+        }
+
+        [data-theme="dark"] & {
+            background-color: rgb($grey_misty, 0.24);
+        }
+    }
+}

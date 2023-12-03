@@ -1,0 +1,885 @@
+{
+  "NavigationPanel": {
+    "home": "Головна",
+    "help_center": "Центр допомоги",
+    "help_center_login": "Увійти / Зареєструватися",
+    "help_center_buy": "Купівля / Повернення",
+    "help_center_sell": "Продаж / Виплата",
+    "help_center_accounts": "Облікові записи",
+    "categories": "Категорії"
+  },
+  "NotFoundPage": {
+    "title": "Сторінка не знайдена",
+    "message": "Не вдалося знайти запитуваний ресурс",
+    "toHome": "Вернутися додому"
+  },
+  "ErrorPage": {
+    "title": "Упс... Щось пішло не так!",
+    "retry": "Спробувати знову"
+  },
+  "Home": {
+    "Main": {
+      "title": {
+        "first_path": "Ваш",
+        "accent": "Ресурс",
+        "second_path": "Для Ігрових Аккаунтів!"
+      },
+      "subtitle": "Ваш остаточний пункт призначення для ігрових облікових записів: Розблокуйте, Торгуйте і Перемагайте!",
+      "start_btn": "ПОЧАТИ",
+      "secure_payment": "Безпечна оплата",
+      "support": "Онлайн-підтримка",
+      "customization": "Налаштування магазину",
+      "chat": "Чат між гравцями"
+    },
+    "TopSelling": {
+      "title": {
+        "primary": "Найпопулярніші",
+        "accent": "Маркетплейси"
+      },
+      "all": "Дивитися всі",
+      "arknights_title": "Arknights",
+      "diablo_title": "Diablo IV Gold",
+      "battle_title": "Arknights",
+      "wow_title": "WoW Gold",
+      "online_seller": "Онлайн-продавців",
+      "see_items": "Переглянути товари"
+    },
+    "HowWorks": {
+      "title": {
+        "primary": "Як це",
+        "accent": "Працює?"
+      },
+      "subtitle": "PayForGame - це онлайн платформа для купівлі та продажу ігрових товарів і облікових записів. Ви можете стати продавцем або покупцем на нашій платформі."
+    },
+    "BecomeSeller": {
+      "title": {
+        "primary": "Як Стати",
+        "accent": "Продавцем?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "signup": "Зареєструйтесь як продавець",
+      "create_goods": "Створіть товари",
+      "sell_goods": "Продавайте свої товари",
+      "btn_text": "Стати продавцем"
+    },
+    "BecomeBayer": {
+      "title": {
+        "primary": "Як Стати",
+        "accent": "Покупцем?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "signup": "Зареєструйтесь як покупець",
+      "find_goods": "Шукайте товари",
+      "buy_goods": "Покупайте товари",
+      "btn_text": "Стати покупцем"
+    },
+    "BoostGameplay": {
+      "title": {
+        "primary": "Купуйте товари та покращуйте свій",
+        "accent": "Геймплей"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "first_item": "Lorem ipsum dolor sit amet, consectetu",
+      "second_item": "Lorem ipsum dolor sit amet, consectetu",
+      "third_item": "Lorem ipsum dolor sit amet, consectetu",
+      "read_more": "Читати далі"
+    },
+    "TopUsers": {
+      "title": {
+        "primary": "Топ",
+        "accent": "Користувачів"
+      },
+      "subtitle": "Чемпіони PayForGame: Топ-користувачів нашої платформи",
+      "sellers": "Продавці",
+      "buyers": "Покупці",
+      "sells": "Продажів",
+      "bought": "Куплено"
+    },
+    "Features": {
+      "title": {
+        "primary": "Особливості",
+        "accent": "Маркетплейсу"
+      },
+      "subtitle": "Сприяння геймерам, забезпечення довіри: Наші основні особливості в огляді",
+      "Cards": {
+        "feedback_title": "Репутація та Відгуки",
+        "feedback_subtitle": "Забезпечення довіри через репутацію та відгуки: Підтримка зв'язків в геймінг-спільноті",
+        "protection_title": "Захист від Шахрайства",
+        "protection_subtitle": "Надійний захист для геймерів: Докладний огляд наших заходів зі збереження безпеки від шахраїв",
+        "security_title": "Безпека",
+        "security_subtitle": "Безпека на вищому рівні: Зміцнення геймінг-досвіду за допомогою нашого невідступного підходу до онлайн-безпеки"
+      }
+    },
+    "Trading": {
+      "title": {
+        "primary": "Торгівля ігровими товарами може бути ризиковою, але не з",
+        "accent": "GameVendor"
+      },
+      "subtitle": "Ми надаємо безпечний та простий досвід торгівлі для геймерів по всьому світу. Наша технологія PlayerGuardian гарантує високий рівень безпеки транзакцій та захищає інформацію користувачів від фішингу.",
+      "first_item": "Безпечна оплата",
+      "second_item": "Надійні продавці",
+      "third_item": "Оплата з будь-якого місця"
+    },
+    "Rating": {
+      "title": "Рейтинг Спільноти",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "posted_on": "Опубліковано"
+    }
+  },
+  "Header": {
+    "Nav": {
+      "home": "Головна",
+      "categories": "Категорії",
+      "sellers": "Продавці",
+      "help_center": "Допомога",
+      "contact_us": "Контакти"
+    },
+    "Dropdowns": {
+      "account": "Акаунт",
+      "theme": "Тема",
+      "dark_mode": "Темний режим",
+      "Authorized": {
+        "profile": "Профіль",
+        "messages": "Повідомлення",
+        "bought_roducts": "Куплені товари",
+        "achievement": "Досягнення",
+        "more": "Додатково",
+        "report": "Повідомити про помилку",
+        "logout": "Вийти"
+      },
+      "Unauthorized": {
+        "login": "Увійти",
+        "registration": "Реєстрація"
+      }
+    }
+  },
+  "Footer": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do",
+    "QucikAccess": {
+      "title": "Швидкий доступ",
+      "home": "Головна",
+      "categories": "Категорії",
+      "about": "Про нас"
+    },
+    "Support": {
+      "title": "Підтримка",
+      "help_center": "Центр допомоги",
+      "contact": "Зв'яжіться з нами",
+      "become_buyer": "Стати покупцем",
+      "become_seller": "Стати продавцем"
+    },
+    "ContactUs": {
+      "title": "Контакти"
+    },
+    "Payments": {
+      "title": "Способи оплати"
+    },
+    "by_webXwiz": {
+      "primary": "Дизайн та розробка від",
+      "accent": "webXwiz"
+    },
+    "terms_conditions": "Умови та положення",
+    "privacy_policy": "Політика конфіденційності"
+  },
+  "Auth": {
+    "Login": {
+      "image_title": "Розмаїття риб в водоймах",
+      "image_subtitle": "Риба є однією з найстаріших та найрізноманітніших форм життя у водоймах нашої планети. Риби є частиною природного біорізноманіття та важливим гравцем в екосистемах водойм.",
+      "title": "З поверненням",
+      "subtitle": "Увійдіть до свого облікового запису",
+      "user_label": "Ім'я користувача або Email",
+      "user_placeholder": "Введіть ваше ім'я користувача або Email",
+      "password_label": "Пароль",
+      "password_placeholder": "Введіть ваш пароль",
+      "reset": "Відновити пароль",
+      "login_btn": "Увійти",
+      "login_with": "Увійти за допомогою",
+      "havent_account": "Ще не маєте облікового запису?",
+      "signup": "Зареєструватися"
+    },
+    "TwoFactorAuthentication": {
+      "title": "Двофакторна автентифікація",
+      "subtitle": "Будь ласка, введіть код 2FA",
+      "login_btn": "Підтвердити"
+    },
+    "Reset": {
+      "title": "Скинути пароль",
+      "subtitle": "Введіть свій електронний лист або ім'я користувача",
+      "user_label": "Ім'я користувача або Email",
+      "user_placeholder": "Введіть своє ім'я користувача або Email",
+      "reset_btn": "Скинути пароль",
+      "havent_account": "Ще не маєте облікового запису?",
+      "signup": "Зареєструватися",
+      "SetPassword": {
+        "title": "Скинути пароль",
+        "subtitle": "Введіть свій код та новий пароль",
+        "code_label": "Код",
+        "code_placeholder": "Введіть код",
+        "password_label": "Пароль",
+        "password_placeholder": "Введіть пароль",
+        "repeat_password_label": "Повторіть пароль",
+        "repeat_password_placeholder": "Введіть пароль ще раз",
+        "resend_code": "Відправити код ще раз",
+        "success_text": "Новий код успішно надіслано",
+        "resend_text": "Код надіслано на пошту",
+        "return": "Повернутися назад"
+      },
+      "SuccessPage": {
+        "title": "Пароль оновлено",
+        "subtitle": "Ваш пароль успішно скинуто, ви можете увійти з новим паролем",
+        "btn_text": "Ввійти"
+      }
+    },
+    "Registration": {
+      "title": "Ласкаво просимо",
+      "subtitle": "Заповніть нижче форму для реєстрації",
+      "buyer_mode": "Я покупець",
+      "seller_mode": "Я продавець",
+      "email_label": "Електронна пошта",
+      "email_placeholder": "Введіть електронну пошту",
+      "name_label": "Ім'я користувача",
+      "name_placeholder": "Введіть ім'я користувача",
+      "city_label": "Місто",
+      "city_placeholder": "Виберіть місто",
+      "zip_label": "Поштовий індекс",
+      "zip_placeholder": "Введіть поштовий індекс",
+      "street_label": "Вулиця",
+      "street_placeholder": "Виберіть вулицю",
+      "number_label": "Номер телефону",
+      "password_label": "Пароль",
+      "password_placeholder": "Введіть пароль",
+      "repeat_password_label": "Повторіть пароль",
+      "repeat_password_placeholder": "Введіть пароль ще раз",
+      "over_18": "Мені більше 18 років",
+      "register_btn": "Зареєструватися",
+      "clicking_signup": "Натискаючи кнопку «Зареєструватися», ви підтверджуєте, що приймаєте",
+      "terms_conditions": "Умови та положення",
+      "register_with": "Або зареєструйтесь за допомогою",
+      "have_account": "Вже маєте обліковий запис?",
+      "login": "Ввійти"
+    },
+    "EmailVerification": {
+      "title": "Відправлено",
+      "subtitle": "Посилання надіслано на",
+      "resend_link": "Повторно надіслати посилання через:",
+      "resend_btn": "Надіслати ще раз",
+      "message_text": "Електронний лист успішно надіслано",
+      "VerifiedPage": {
+        "title": "Вітання!",
+        "subtitle": "Вашу адресу електронної пошти було успішно підтверджено, починайте свою подорож у PayForGame",
+        "btn_text": "Дивитися пропозиції"
+      }
+    },
+    "PhoneVerification": {
+      "title": "Верифікація",
+      "subtitle": "Будь ласка, введіть 5-значний код, який ми вам відправили на",
+      "resend_link": "Надіслати посилання через:",
+      "send_code": "Підтвердити",
+      "resend_btn": "Надіслати ще раз",
+      "message_text": "Код успішно відправлено",
+      "message_title": "Відправлено",
+      "VerifiedPage": {
+        "title": "Вітання!",
+        "subtitle": "Ваш обліковий запис успішно підтверджено, почніть список своїх продуктів",
+        "btn_text": "Панель продавця"
+      }
+    }
+  },
+  "Validation": {
+    "email_format": "Невірний формат електронної пошти",
+    "min_length": "Мінімум 8 символів",
+    "min_one_num": "Мінімум 1 цифра",
+    "min_one_lower": "Мінімум 1 маленька буква",
+    "not_match": "Паролі не співпадають"
+  },
+  "Messages": {
+    "Error": {
+      "something_wrong": "Щось пішло не так"
+    },
+    "Success": {
+      "resend_link": "Посилання надіслано повторно"
+    }
+  },
+  "AboutPage": {
+    "Main": {
+      "title": {
+        "primary": "Довірена спільнота",
+        "accent": "для геймерів"
+      },
+      "subtitle": "Підвищення геймінгового досвіду завдяки безпечним транзакціям та зв'язку в спільноті"
+    },
+    "Calculations": {
+      "seller": "Активні продавці",
+      "offer": "Пропозиції та товари",
+      "game": "Гри",
+      "avg": "Середньомісячні пропозиції"
+    },
+    "WhoWe": {
+      "title": {
+        "primary": "Хто",
+        "accent": "ми?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Safety": {
+      "title": {
+        "primary": "Безпека на нашому",
+        "accent": "сайті"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "Advantages": {
+      "title": {
+        "primary": "Переваги нашого",
+        "accent": "сайту"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "List": {
+        "first_title": "Lorem ipsum dolor sit amet",
+        "first_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "second_title": "Lorem ipsum dolor sit amet",
+        "second_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "third_title": "Lorem ipsum dolor sit amet",
+        "third_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "fourth_title": "Lorem ipsum dolor sit amet",
+        "fourth_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      }
+    },
+    "Activity": {
+      "title": {
+        "primary": "Що ми",
+        "accent": "робимо?"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "Cards": {
+        "buy_title": "Купівля та продаж",
+        "buy_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation",
+        "community_title": "Активна спільнота",
+        "community_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "payment_title": "Безпечні платежі",
+        "payment_subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+      }
+    }
+  },
+  "HeplCenterPage": {
+    "Main": {
+      "title": {
+        "primary": "Центр",
+        "accent": "Допомоги"
+      },
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et"
+    },
+    "Cards": {
+      "login_title": "Увійти / Зареєструватися",
+      "login_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "buy_title": "Купити / Повернути",
+      "buy_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "sell_title": "Продати / Вивести кошти",
+      "sell_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "accounts_title": "Облікові записи",
+      "accounts_subtitle": "Lorem ipsum dolor sit amet, consectetur",
+      "btn_text": "Дізнатися більше"
+    },
+    "FAQ": {
+      "title": "Питання та відповіді",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+      "Spoilers": {
+        "transfers_title": "Як працює процес передачі облікового запису?",
+        "transfers_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "security_title": "Чи безпечно купувати ігрові облікові записи на вашій платформі?",
+        "security_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "payments_title": "Які методи оплати ви приймаєте?",
+        "payments_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "support_title": "Що робити, якщо виникли проблеми з моєю покупкою або продажем?",
+        "support_body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrуд exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrуд exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      "have_question": "Все ще є питання?",
+      "ask": "Задайте питання",
+      "ask_question": "Задати запитання",
+      "text_placeholder": "Напишіть ваше запитання",
+      "submit": "Надіслати"
+    },
+    "table_title": "Зміст",
+    "subjects_title": "Інші теми",
+    "article_tittle": "Ця стаття була корисною?",
+    "article_looking": "Не знайшли, що шукаєте?",
+    "article_contact": "Зв'яжіться з нами",
+    "LoginSignup": {
+      "Table": {
+        "sponsorships": "Спонсорство",
+        "become_seller": "Як стати продавцем?",
+        "register_buyer": "Як зареєструватися як покупцю?",
+        "undelivered": "Я не отримав PIN-код для реєстрації.",
+        "verification": "Я не отримав жодного електронного листа. Як підтвердити свій обліковий запис?"
+      }
+    },
+    "BuyRefund": {
+      "Table": {
+        "topic1": "Купити / Поверну Topic 1",
+        "topic2": "Купити / Поверну Topic 2",
+        "topic3": "Купити / Поверну Topic 3"
+      }
+    },
+    "SellPayout": {
+      "Table": {
+        "topic1": "Продати / Вивес Topic 1",
+        "topic2": "Продати / Вивес Topic 2",
+        "topic3": "Продати / Вивес Topic 3"
+      }
+    },
+    "Accounts": {
+      "Table": {
+        "topic1": "Облікові записи Topic 1",
+        "topic2": "Облікові записи Topic 2",
+        "topic3": "Облікові записи Topic 3"
+      }
+    }
+  },
+  "CategoriesPage": {
+    "FilterLetters": {
+      "a": "А",
+      "b": "Б",
+      "c": "В",
+      "d": "Г",
+      "e": "Д",
+      "f": "Е",
+      "g": "Є",
+      "h": "Ж",
+      "i": "З",
+      "j": "И",
+      "k": "І",
+      "l": "Ї",
+      "m": "Й",
+      "n": "К",
+      "o": "Л",
+      "p": "М",
+      "q": "Н",
+      "r": "О",
+      "s": "П",
+      "t": "Р",
+      "u": "С",
+      "v": "Т",
+      "w": "У",
+      "x": "Ф",
+      "y": "Х",
+      "z": "Ц"
+    },
+    "all_subaregories": "Всі сабкатегорії",
+    "no_categories": "Немає Категорій"
+  },
+  "CategoryPage": {
+    "Search": {
+      "Form": {
+        "search_label": "Пошук",
+        "search_placeholder": "Пошук продукту",
+        "platform_label": "Платформа",
+        "platform_placeholder": "Усі платформи",
+        "level_label": "Рівень",
+        "stage_label": "Етап",
+        "min": "Мін",
+        "max": "Макс",
+        "only_online": "Тільки онлайн продавці",
+        "submit": "Пошук"
+      }
+    },
+    "Products": {
+      "TableHead": {
+        "seller": "Продавець",
+        "title": "Назва",
+        "platform": "Платформа",
+        "level": "Рівень",
+        "stage": "Етап",
+        "price": "Ціна"
+      },
+      "confident_level": "Рівень довіри:",
+      "more": "Більше"
+    }
+  },
+  "ProductPage": {
+    "Order": {
+      "Ordering": {
+        "title": "Замовлення",
+        "server": "Сервер",
+        "short_description": "Короткий опис",
+        "detailed_description": "Детальний опис",
+        "Instruction": {
+          "title": "Якщо ви хочете придбати пропозицію, будь ласка, дотримуйтесь наступних кроків:",
+          "first_step": "Надішліть мені інформацію для входу в обліковий запис (після операції ви зможете змінити пароль)",
+          "second_step": "Вийдіть з гри.",
+          "third_step": "Зачекайте від 5 до 30 хвилин"
+        },
+        "payment_title": "Спосіб оплати",
+        "payment_placeholder": "Не вибрано",
+        "payment_from": "Від",
+        "PaymentMethods": {
+          "bank_card": "Банківська картка",
+          "crypto_currency": "Криптовалюта",
+          "pay_pal": "PayPal"
+        },
+        "buy": "Купити",
+        "select_method": "Оберіть спосіб оплати"
+      }
+    },
+    "Chat": {
+      "relates_to": "Це повідомлення стосується до:",
+      "write_message": "Напишіть ваше повідомлення",
+      "send": "Надіслати",
+      "Modal": {
+        "title": "Повідомити про продавця",
+        "write_description": "Напишіть опис",
+        "attachment": "Прикріпити файл (необов'язково)",
+        "upoad_files": "Ваші файли:",
+        "send": "Надіслати"
+      }
+    },
+    "Feedback": {
+      "reviews": "Відгуки",
+      "rating": "Рейтинг"
+    }
+  },
+  "PurchasePage": {
+    "OrderDetails": {
+      "title": "Деталі замовлення",
+      "category": "Категорія",
+      "type": "Тип",
+      "platform": "Платформа",
+      "short_description": "Короткий опис",
+      "detailed_description": "Детальний опис",
+      "Instruction": {
+        "title": "Якщо ви хочете придбати пропозицію, будь ласка, дотримуйтесь наступних кроків:",
+        "first_step": "Надішліть мені інформацію для входу в обліковий запис (після операції ви зможете змінити пароль)",
+        "second_step": "Вийдіть з гри.",
+        "third_step": "Зачекайте від 5 до 30 хвилин"
+      }
+    },
+    "Payment": {
+      "title": "Оплата",
+      "payment_method": "Спосіб оплати",
+      "product_price": "Ціна товару",
+      "fee": "Комісія",
+      "total": "Всього",
+      "pay": "Оплатити"
+    },
+    "Success": {
+      "title": "Покупка успішна",
+      "subtitle": "Ваша покупка була успішною, і продавець надішле вам продукт найближчим часом",
+      "btn_text": "Переглянути продукт"
+    }
+  },
+  "ProfilePage": {
+    "Sidebar": {
+      "level": "Рівень",
+      "confident_lvl": "Рівень впевненості:",
+      "profile": "Профіль",
+      "messages": "Повідомлення",
+      "bought_roducts": "Придбані продукти",
+      "achievement": "Досягнення",
+      "payment": "Платіж",
+      "notifications": "Сповіщення",
+      "security": "Безпека",
+      "logout": "Вийти",
+      "Seller": {
+        "financial_balance": "Фінансовий баланс",
+        "sales_offers": "Продажі та пропозиції",
+        "top_sellers": "Топ-продавці",
+        "new_offer": "Створити товар"
+      }
+    },
+    "Profile": {
+      "change_background": "Змінити тло",
+      "level": "Рівень",
+      "Form": {
+        "email_label": "Електронна пошта",
+        "email_placeholder": "Введіть електронну пошту",
+        "name_label": "Ім'я користувача",
+        "name_placeholder": "Введіть ім'я користувача",
+        "city_label": "Місто",
+        "city_placeholder": "Виберіть місто",
+        "zip_label": "Поштовий індекс",
+        "zip_placeholder": "Введіть поштовий індекс",
+        "street_label": "Вулиця",
+        "street_placeholder": "Виберіть вулицю",
+        "number_label": "Номер телефону",
+        "save_changes": "Зберегти зміни",
+        "discard": "Відхилити"
+      },
+      "Modal": {
+        "title": "Код підтвердження",
+        "enter_code": "Будь ласка, введіть 5-значний код, який ми відправили на",
+        "text_btn": "Підтвердити",
+        "resend_text": "Повторно відправити посилання через:",
+        "resend_btn": "Повторно відправити",
+        "successfully": "Телефон успішно підтверджено"
+      },
+      "BackfroundModal": {
+        "title": "Змінити тло",
+        "upload_image": "Завантажити зображення",
+        "drag_or_click": "Перетягніть або клікніть, щоб вибрати файл",
+        "max_size": "Максимальний розмір: 2 мб, лише PNG або JPEG",
+        "select_color": "Або виберіть колір",
+        "text_btn": "Змінити тло"
+      },
+      "successfully_updated": "Успішно оновлено"
+    },
+    "Messages": {
+      "search_conversation": "Пошук розмови",
+      "all_messages": "Всі",
+      "unread_messages": "Непрочитані",
+      "old_messages": "Старі",
+      "select_converstation": "Виберіть розмову",
+      "select_converstation_subtitle": "Виберіть розмову та почніть чат",
+      "no_converstation": "Немає розмов",
+      "no_converstation_subtitle": "Ой! Поки що немає розмов, Досліджуйте пропозиції та почніть чат із продавцями"
+    },
+    "BoughtProducts": {
+      "title": "Куплені продукти",
+      "see_details": "Переглянути деталі",
+      "ProductDetail": {
+        "title": "Деталі продукту",
+        "waiting_details": "Чекаємо на деталі",
+        "waiting_details_subtitle": "Продавець надішле вам деталі продукту до",
+        "didnt_receive": "Не отримали деталі? Повідомте про це",
+        "waiting_confirm": "Чекаємо на підтвердження",
+        "waiting_confirm_subtitle": "Продавець відправив вам деталі, перевірте вашу скриньку до",
+        "report": "Повідомити",
+        "confirm": "Підтвердити",
+        "ProductInfo": {
+          "title": "Інформація про продукт",
+          "category": "Категорія",
+          "type": "Тип",
+          "server": "Сервер",
+          "short_description": "Короткий опис",
+          "detailed_description": "Детальний опис",
+          "Instruction": {
+            "title": "Якщо ви хочете купити пропозицію, дотримуйтесь цих кроків:",
+            "first_step": "Надішліть мені дані для входу в обліковий запис (після операції ви можете змінити пароль)",
+            "second_step": "Вийдіть з гри.",
+            "third_step": "Чекайте від 5 до 30 хвилин"
+          }
+        },
+        "PaymentInfo": {
+          "title": "Інформація про оплату",
+          "seller": "Продавець",
+          "price": "Ціна",
+          "time_date": "Час та дата",
+          "method": "Метод оплати",
+          "payment_code": "Код оплати",
+          "payment_status": "Статус оплати",
+          "card_number": "Номер картки"
+        },
+        "Reviews": {
+          "title": "Відгуки",
+          "empty_review": "Відгуків немає",
+          "empty_review_subtitle": "На жаль, поки немає жодного відгуку. Будьте першим і залиште свій відгук"
+        },
+        "SendReview": {
+          "title": "Ваш відгук",
+          "write_review": "Напишіть свій відгук",
+          "send": "Відправити"
+        }
+      }
+    },
+    "Achievement": {
+      "title": "Досягнення",
+      "of": "з"
+    },
+    "Payment": {
+      "title": "Оплата",
+      "Methods": {
+        "title": "Методи оплати",
+        "stripe": "Stripe",
+        "stripe_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "paypal": "Paypal",
+        "paypal_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "crypto": "Крипто",
+        "crypto_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "connect": "Підключити"
+      },
+      "history": "Історія",
+      "search_label": "Пошук",
+      "search_placeholder": "Пошук за кодом транзакції",
+      "date_label": "Дата транзакції",
+      "date_from": "Від",
+      "date_to": "До",
+      "Table": {
+        "payment_code": "Код оплати",
+        "product_name ": "Назва продукту",
+        "time_date": "Час та дата",
+        "status": "Статус",
+        "amount": "Сума",
+        "null": "",
+        "no_results": "Немає результатів"
+      },
+      "Empty": {
+        "title": "У вас немає оплати!",
+        "subtitle": "Ви ще не робили оплату"
+      },
+      "Details": {
+        "title": "Деталі оплати",
+        "payment_code": "Код оплати",
+        "status": "Статус",
+        "method": "Метод",
+        "card_number": "Номер картки",
+        "amount": "Сума",
+        "time_date": "Час та дата",
+        "product": "Продукт",
+        "to_product": "В процесі"
+      }
+    },
+    "Notifications": {
+      "title": "Сповіщення",
+      "mark_all_read": "Позначити як прочитане"
+    },
+    "Security": {
+      "title": "Безпека",
+      "current_password_label": "Пароль",
+      "current_password_placeholder": "Введіть свій пароль",
+      "new_password_label": "Новий пароль",
+      "new_password_placeholder": "Введіть новий пароль",
+      "repeat_new_password_label": "Повторіть новий пароль",
+      "repeat_new_password_placeholder": "Введіть новий пароль ще раз",
+      "change_btn": "Змінити пароль",
+      "2fa_tittle": "Двофакторна автентикація (2FA)",
+      "2fa_subtittle": "Включіть опцію двофакторної автентикації, щоб підвищити безпеку свого облікового запису.",
+      "Modal": {
+        "title": "Увімкнути 2FA",
+        "download_app": "Скачати додаток",
+        "scan_qr": "Скан QR-коду",
+        "enter_code": "Введіть код",
+        "enable": "Увімкнути",
+        "next": "Далі",
+        "cancel": "Скасувати",
+        "first_step_text": "Завантажте та встановіть аутентифікаційний додаток на свій мобільний пристрій.",
+        "second_step_text": "Використовуйте додаток для сканування цього QR-коду.",
+        "generated_successfully_title": "QR-код створено успішно",
+        "third_step_text": "Введіть код, згенерований додатком.",
+        "fa_enabled": "2FA Увімкнено",
+        "fa_enabled_subtitle": "Ваша двофакторна автентикація успішно увімкнена",
+        "ok": "Добре"
+      }
+    },
+    "FinancialBalance": {
+      "title": "Фінанси $ Баланс",
+      "current_balance": "Поточний баланс",
+      "withdraw_btn": "Вивести",
+      "income": "Дохід",
+      "total_income": "Загальний дохід",
+      "last_week": "Минулого тижня",
+      "last_24": "Останні 24 години",
+      "Empty": {
+        "title": "У вас немає платежів!",
+        "subtitle": "Ви ще не отримали платіж"
+      },
+      "Details": {
+        "title": "Деталі платежу",
+        "payment_code": "Код платежу",
+        "status": "Статус платежу",
+        "method": "Метод",
+        "type": "Тип",
+        "amount": "Сума",
+        "time_date": "Час та дата",
+        "product": "Продукт",
+        "to_product": "Запущено",
+        "buyer": "Покупець"
+      }
+    }
+  },
+  "SellersPage": {
+    "Sidebar": {
+      "dashboard": "Панель приладів",
+      "messages": "Повідомлення",
+      "sections": "Секції",
+      "sellers": "Продавці",
+      "buyers": "Покупці",
+      "financial": "Фінанси",
+      "achievements": "Досягнення",
+      "security": "Безпека",
+      "report": "Повідомити про помилку",
+      "logout": "Вийти"
+    },
+    "Stats": {
+      "sellers": "Продавці",
+      "top_sellers": "Топ-продавці",
+      "TopSellersFilter": {
+        "all_time": "Увесь час",
+        "this_year": "Цей рік",
+        "this_month": "Цей місяць",
+        "sells": "продаж"
+      },
+      "Filters": {
+        "search": "Пошук",
+        "search_seller": "Знайти продавця",
+        "signup_date": "Дата реєстрації",
+        "from": "Від",
+        "to": "До"
+      },
+      "Table": {
+        "user_name": "Ім'я користувача",
+        "number": "Номер",
+        "signup_date": "Дата реєстрації",
+        "sells": "Продажі",
+        "of": "з"
+      }
+    },
+    "Modal": {
+      "ban_seller": "Забанити продавця",
+      "unban_seller": "Розбанити продавця",
+      "sure_to_ban": "Ви впевнені, що хочете забанити цього продавця?",
+      "sure_to_unban": "Ви впевнені, що хочете розбанити цього продавця?",
+      "cancel": "Відміна",
+      "ban": "Забанити",
+      "unban": "Розбанити"
+    },
+    "no_sellers": "Немає продавців",
+    "no_sellers_subtitle": "Наразі немає продавців"
+  },
+  "SellerPage": {
+    "title": "Профіль продавця",
+    "level": "Lv.",
+    "confident_lvl": "Рівень впевненості:",
+    "total_offers": "Загальна пропозиція",
+    "Tabs": {
+      "offers": "Пропозиції",
+      "reviews": "Відгуки",
+      "achievements": "Досягнення"
+    },
+    "history": "Історія",
+    "search_label": "Пошук",
+    "search_placeholder": "Пошук пропозиції",
+    "price_label": "Діапазон цін",
+    "price_from": "Від",
+    "price_to": "До",
+    "Table": {
+      "title": "Заголовок",
+      "category_subcategory": "Категорія, Підкатегорія",
+      "price": "Ціна",
+      "null": ""
+    },
+    "no_products": "Немає товарів",
+    "no_products_subtitle": "Немає товарів",
+    "no_results": "Немає результатів",
+    "no_reviews": "Немає відгуків",
+    "no_reviews_subtitle": "Немає відгуків",
+    "see_more": "Дивитися більше",
+    "no_achievements": "Немає досягнень",
+    "no_achievements_subtitle": "Немає досягнень"
+  },
+  "Rating": {
+    "review": "Відгуків"
+  },
+  "Achievements": {
+    "of": "з"
+  },
+  "Table": {
+    "of": "з",
+    "no_page": "Такої сторінки немає",
+    "no_page_subtitle": "Такої сторінки не існує",
+    "to_first": "Повернутися на першу"
+  },
+  "Charts": {
+    "Filters": {
+      "monthly": "Щомісячно",
+      "daily": "Щоденно"
+    }
+  }
+}
