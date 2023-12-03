@@ -703,7 +703,7 @@ export const SellersStats: FC = () => {
             ))}
         </tbody>
       </table>
-      <div className={s.pagination}>
+      <div className={s.pages}>
         <span>
           {filteredUsers.length ? startIdx + 1 : 0}-{endIdx} {t('Table.of')}{' '}
           {filteredUsers.length}
